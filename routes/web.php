@@ -26,3 +26,7 @@ Route::get('/register', function () {
 Route::get('/make_payment', function () {
     return view('make_payment');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
