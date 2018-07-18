@@ -15,7 +15,7 @@ class CreateOrdercategorgiesTable extends Migration
     {
         Schema::create('ordercategorgies', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('order_type');
+            $table->enum('order_type',['local food','take away']);
             $table->string('food_photo');
             $table->timestamps();
         });

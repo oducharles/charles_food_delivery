@@ -17,16 +17,23 @@ Route::get('/', function () {
 Route::get('/localfood', function () {
     return view('localfood');
 });
-Route::get('/login', function () {
-    return view('login');
-});
 Route::get('/register', function () {
     return view('register');
 });
-Route::get('/make_payment', function () {
+Route::get('/pay', function () {
     return view('make_payment');
 });
+Route::get('/app', function () {
+    return view('app');
+});
+// ->middleware('auth')
+Route::get('/make_payment', 'OrdersController@place_order');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::post('/paid', 'PaidOrderController@save_customer_order');
+Route::post('/reciept', function(){
+	return view('reciept');
+});

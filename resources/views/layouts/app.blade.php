@@ -16,11 +16,15 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
@@ -42,11 +46,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="">{{ __('Home') }}</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                            </li>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                            </li>                            
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
@@ -70,34 +74,37 @@
                 </div>
             </div>
         </nav>
-
+        
         <main class="py-4">
             @yield('content')
         </main>
     </div>
-    <script type="text/javascript" src="all_jquery/jquery-3.3.1.js"></script>
-        <script>
-            $("#localfood").on("change", function() {
-                var localfood = document.getElementById('localfood').value;
-                if(localfood = "vegetarian"){
-                    $("#vegetarian_menu").show();
-                }
-                else if (localfood = "beef"){
-                    $("#vegetarian_menu").hide();
-                    alert("Not vegetarian")
-                }
-            });
+    <script  src="{{asset('all_jquery/jquery-3.3.1.js') }}"></script>
+    <script>
+        $(".localfood").on("change", function() {
+            alet("Ok");
+            var localfood = document.getElementById('localfood').value;
+            if(localfood = "vegetarian"){
+                alert("Its Ok now")
+                $("#vegetarian_menu").show();
+            }
+            else if (localfood = "beef"){
+                $("#vegetarian_menu").hide();
+                alert("Not vegetarian")
+            }
+        });
 
-            $("#delivery_time").on("change", function() {
-                var delivery_time = document.getElementById('delivery_time').value;
-                if(delivery_time = "lunch"){
-                    $("#lunch_time").show();
-                }
-                else{
-                    $("#supper_time").show();
-                    alert("Supper time available");
-                }
-            });
-        </script>
+        $(".delivery_time").on("change", function() {
+            var delivery_time = document.getElementById('delivery_time').value;
+            if(delivery_time = "lunch"){
+                $("#lunch_time").show();
+            }
+            else{
+                $("#supper_time").show();
+                alert("Supper time available");
+            }
+        });
+        
+    </script>
 </body>
 </html>
