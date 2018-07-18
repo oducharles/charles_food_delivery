@@ -98,7 +98,6 @@
       });
       $("#vegetarian_menu").on("change", function(){
         $("#vegetarian_foods").show();
-        alert("Ok");
       });
     </script>
   </body>

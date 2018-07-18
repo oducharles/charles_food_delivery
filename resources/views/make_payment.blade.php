@@ -1,4 +1,4 @@
-@extends('app')
+@extends('home')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -7,7 +7,6 @@
                 <div class="card-header">{{ __('Make Payment') }}</div>
 
                 <div class="card-body">
-                    
                     <form method="POST" action="/paid" aria-label="{{ __('Make Payment') }}">
                         @csrf
 
@@ -16,13 +15,12 @@
                         <input name="quantity" value="{{ $my_orders['quantity'] }}" hidden>
                         <input name="delivery_time" value="{{ $my_orders['delivery_time'] }}" hidden>
                         <input name="expected_time" value="{{ $my_orders['expected_time'] }}" hidden>
-
                         
                         <div class="form-group row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Current Location/Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ $my_orders['food_name'] }}" required autofocus>
+                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ old('address') }}" required autofocus>
 
                                 @if ($errors->has('address'))
                                     <span class="invalid-feedback" role="alert">
@@ -36,7 +34,7 @@
                             <label for="phone-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Mobile Money Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone-confirm" type="phone" class="form-control" name="password_confirmation" required>
+                                <input id="phone-confirm" type="text" class="form-control" name="phone-confirm" value="{{ old('phone-confirm') }}"  required>
                             </div>
                         </div>
 

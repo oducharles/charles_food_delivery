@@ -12,16 +12,16 @@ class PaidOrderController extends Controller
     {
     	$this->validate($request, [
     		'address' =>'required',
-			'password_confirmation' =>'required',
+			'phone-confirm' =>'required',
     	]);
     	Orders::create([
-    		'user_id' =>1,//Auth::User()->id,
+    		'user_id' =>Auth::User()->id,
     		'food_name' =>$request->vegs,
     		'order_category' =>'yes',
 			'quantity' =>$request->quantity,
 			'price' =>$request->price,
 			'delivery_time' =>$request->expected_time,
-			'reciept_number' =>"str_rand(8)"
+			'reciept_number' =>'$this->id'
     	]);
     	return view('reciept');
     }

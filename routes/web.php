@@ -26,8 +26,8 @@ Route::get('/pay', function () {
 Route::get('/app', function () {
     return view('app');
 });
-// ->middleware('auth')
-Route::get('/make_payment', 'OrdersController@place_order');
+// 
+Route::get('/make_payment', 'OrdersController@place_order')->middleware('auth');
 
 Auth::routes();
 
