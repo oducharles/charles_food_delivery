@@ -4,19 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Ordercategory;
 use App\Orders;
-use App\Users;
+use App\User;
 use Auth;
 
 class OrdersController extends Controller
 {
     public function order_type()
     {
-        $my_food = "SELECT order_type, food_photo
-                    FROM ordercategorgies
-                    WHERE id = 28";
-        $hold_my_food = DB::select($my_food);
-        return view('index', compact('hold_my_food'));
+
+        $local_foods = Ordercategory::where('id', '=', 28 );
+
+        return view('index', compact('hold_my_food', 'local_foods'));
     }
 
     public function place_order(Request $request)
@@ -41,8 +41,11 @@ class OrdersController extends Controller
         $my_info = "SELECT address, phone_number
                     FROM users
                     WHERE id = ".Auth::User()->id."";
-                    
+
         $hold_my_info = DB::select($my_info);
+
+        // $hold_my_info = User::where('id', '=', Auth::User()->id );
+
         return view('make_payment', compact('my_orders', 'hold_my_info'));
     }
 

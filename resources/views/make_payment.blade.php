@@ -36,10 +36,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="phone-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Mobile Money Number') }}</label>
+                            <label for="phone_confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Mobile Money Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone-confirm" type="text" class="form-control" name="phone-confirm" value="{{ $row->phone_number }}"  required>
+                                <input id="phone_confirm" type="text" class="form-control" name="phone_confirm" value="{{ $row->phone_number }}"  required>
                             </div>
                         </div>
                         @endforeach
