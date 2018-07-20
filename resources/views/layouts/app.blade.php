@@ -16,9 +16,6 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet" type="text/css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -79,32 +76,34 @@
             @yield('content')
         </main>
     </div>
-    <script  src="{{asset('all_jquery/jquery-3.3.1.js') }}"></script>
+        <script src="{{ URL::asset('all_jquery/jquery-3.3.1.js') }}"></script>
     <script>
-        $(".localfood").on("change", function() {
-            alet("Ok");
-            var localfood = document.getElementById('localfood').value;
-            if(localfood = "vegetarian"){
-                alert("Its Ok now")
-                $("#vegetarian_menu").show();
-            }
-            else if (localfood = "beef"){
-                $("#vegetarian_menu").hide();
-                alert("Not vegetarian")
-            }
-        });
 
-        $(".delivery_time").on("change", function() {
-            var delivery_time = document.getElementById('delivery_time').value;
-            if(delivery_time = "lunch"){
-                $("#lunch_time").show();
-            }
-            else{
-                $("#supper_time").show();
-                alert("Supper time available");
-            }
-        });
-        
+      $( document ).ready( function(){
+        $("#loca_food_specifications").hide();
+        $("#lunch_time").hide();
+        $("#supper_time").hide();
+        $(".place-order").hide();
+      });
+      
+      $("#local_food_name").on("change", function(){
+        var localfood = document.getElementById('local_food_menu').value;
+        if (localfood === "beans") {
+          $("#loca_food_specifications").show();          
+        }
+      });
+
+      $("#local_food_meal_time").on("change", function(){
+        var meal_time = document.getElementById('meal_time').value;
+        if (meal_time === "lunch") {
+          $("#lunch_time").show();
+          $(".place-order").show();
+        }
+        if (meal_time === "supper") {
+          $("#supper_time").show();
+          $(".place-order").show();
+        }
+      });
     </script>
 </body>
 </html>

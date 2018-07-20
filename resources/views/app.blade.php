@@ -76,28 +76,29 @@
     <script>
 
       $( document ).ready( function(){
-        $(".vegetarian_menu").hide();
+        $("#loca_food_specifications").hide();
         $("#lunch_time").hide();
         $("#supper_time").hide();
-        $("#vegetarian_foods").hide();
+        $(".place-order").hide();
       });
       
-      $(".localfood").on("change", function(){
-        var localfood = document.getElementById('localfood').value;
-        
-        if (localfood = "vegetarian") {
-          $(".vegetarian_menu").show();          
+      $("#local_food_name").on("change", function(){
+        var localfood = document.getElementById('local_food_menu').value;
+        if (localfood === "beans") {
+          $("#loca_food_specifications").show();          
         }
       });
 
-      $("#delivery_time").on("change", function(){
-        var delivery_time = document.getElementById('delivery_time').value;
-        if (delivery_time ="lunch") {
+      $("#local_food_meal_time").on("change", function(){
+        var meal_time = document.getElementById('meal_time').value;
+        if (meal_time === "lunch") {
           $("#lunch_time").show();
+          $(".place-order").show();
         }
-      });
-      $("#vegetarian_menu").on("change", function(){
-        $("#vegetarian_foods").show();
+        if (meal_time === "supper") {
+          $("#supper_time").show();
+          $(".place-order").show();
+        }
       });
     </script>
   </body>

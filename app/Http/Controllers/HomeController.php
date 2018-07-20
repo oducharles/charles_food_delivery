@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -23,7 +25,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // dd('home!');
-        return view('make_payment');
+        return view('index');
     }
+
 }

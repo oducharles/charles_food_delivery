@@ -7,7 +7,7 @@
                 <div class="card-header">{{ __('Verify Order') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="/checked" aria-label="{{ __('Verify Order') }}">
+                    <form method="GET" action="/checked" aria-label="{{ __('Verify Order') }}">
                         @csrf
                         <div class="form-group row">
                             <label for="reciept_number" class="col-md-4 col-form-label text-md-right">{{ __('Customers\' Reciept Number') }}</label>

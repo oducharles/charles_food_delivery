@@ -10,17 +10,22 @@
                     <form method="POST" action="/paid" aria-label="{{ __('Make Payment') }}">
                         @csrf
 
-                        <input name="vegs" value="{{ $my_orders['food_name'] }}" hidden>
-                        <input name="price" value="{{ $my_orders['price'] }}" hidden>
-                        <input name="quantity" value="{{ $my_orders['quantity'] }}" hidden>
-                        <input name="delivery_time" value="{{ $my_orders['delivery_time'] }}" hidden>
-                        <input name="expected_time" value="{{ $my_orders['expected_time'] }}" hidden>
-                        
+                        @if(empty($my_orders))
+
+                        @else
+                            <input name="food_name" value="{{ $my_orders['food_name'] }}" hidden>
+                            <input name="price" value="{{ $my_orders['price'] }}" hidden>
+                            <input name="quantity" value="{{ $my_orders['quantity'] }}" hidden>
+                            <input name="meal_time" value="{{ $my_orders['meal_time'] }}" hidden>
+                            <input name="expected_time" value="{{ $my_orders['expected_time'] }}" hidden>
+                        @endif
+
+                        @foreach($hold_my_info as $row)
                         <div class="form-group row">
                             <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Current Location/Address') }}</label>
 
                             <div class="col-md-6">
-                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ old('address') }}" required autofocus>
+                                <input id="address" type="text" class="form-control{{ $errors->has('address') ? ' is-invalid' : '' }}" name="address" value="{{ $row->address }}" required autofocus>
 
                                 @if ($errors->has('address'))
                                     <span class="invalid-feedback" role="alert">
@@ -34,9 +39,10 @@
                             <label for="phone-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Mobile Money Number') }}</label>
 
                             <div class="col-md-6">
-                                <input id="phone-confirm" type="text" class="form-control" name="phone-confirm" value="{{ old('phone-confirm') }}"  required>
+                                <input id="phone-confirm" type="text" class="form-control" name="phone-confirm" value="{{ $row->phone_number }}"  required>
                             </div>
                         </div>
+                        @endforeach
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
