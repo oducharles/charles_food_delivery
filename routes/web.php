@@ -55,3 +55,9 @@ Route::post('/paid', 'PaidOrderController@save_customer_order');
 Route::get('/my_reciept', 'PaidOrderController@retrieve_order')->name('my_reciept');
 Route::get('/reciept', 'PaidOrderController@retrieve_order_details')->name('reciept');
 
+Route::get('/add_food', function () {
+    return view('add_food');
+});
+Route::post('/store_food', 'AdminController@add_food');
+
+
