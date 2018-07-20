@@ -9,26 +9,26 @@
                 	<div class="form-group row">
                         <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Food:') }}</label>
                         <div class="col-md-6">
-                		{{ $order->food_name }}
+                		{{ $order_details['food_name'] }}
                         </div>
                     <!-- </div>
 
                     <div class="form-group row"> -->
                         <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Quantity:') }}</label>
                         <div class="col-md-6">
-                		{{ $order->quantity }}
+                		{{ $order_details['quantity'] }}
                         </div>
                     <!-- </div>
 
                     <div class="form-group row"> -->
                         <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Amount:') }}</label>
                         <div class="col-md-6">
-                		{{ $order->price }}
+                		{{ $order_details['price'] }}
                         </div>
 
                         <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Reciept_number:') }}</label>
                         <div class="col-md-6">
-                		{{ $order->reciept_number }}
+                		{{ $order_details['reciept_number'] }}
                         </div>
                     </div>
                 </div>

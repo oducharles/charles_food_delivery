@@ -19,7 +19,9 @@
 				</div>
 			</div>
 		</div>
-		<a href="/reciept"><div class="card-header">{{ ('View my Reciept') }}</div></a>
+		@unless (Auth::check())
+		<a href="/paid"><div class="card-header">{{ ('View my Reciept') }}</div></a>
+		@endunless
 	</div>
 </div>
 @endsection

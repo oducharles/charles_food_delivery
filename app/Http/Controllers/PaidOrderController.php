@@ -16,7 +16,7 @@ class PaidOrderController extends Controller
 			'phone-confirm' =>'required',
     	]);
 
-    	Orders::create([
+    	$order_details = Orders::create([
     		'user_id' =>Auth::User()->id,
     		'food_name' =>$request->food_name,
     		'order_category' =>'yes',
@@ -25,8 +25,7 @@ class PaidOrderController extends Controller
 			'delivery_time' =>$request->expected_time,
 			'reciept_number' =>Auth::User()->id
     	]);
-
-    	return view('reciept');
+    	return view('order_reciept', compact('order_details'));
     }
 
     public function checkboxes(Request $request)
@@ -36,49 +35,17 @@ class PaidOrderController extends Controller
 
     public function verify_order(Request $request)
     {
+
         $this->validate($request, [
-            'reciept_number' => 'required'
+            'reciept_number' => 'required | exists:orders'
         ]);
 
-        $verify_reciept_number = $request->get('reciept_number');
+        $order = Orders::where('reciept_number', '=', $request->reciept_number )->first();
 
-        $retrieve_order = "SELECT reciept_number 
-                            FROM orders
-                            WHERE reciept_number = ".$verify_reciept_number."";
+        $order->payment_status = 'paid';
+        $order->delivery_status = 'delivered';
+        $order->save();
 
-        $hold_checked_order = DB::select($retrieve_order);
-
-        foreach ($hold_checked_order as $held) {
-
-                $status_update = DB::table('orders')
-                                        ->where('reciept_number', $verify_reciept_number)
-                                        ->update([
-                                            'payment_status' => 'paid',
-                                            'delivery_status' => 'delivered'
-                                            ]);
-        
-                return view('home', compact('status_update'));
-        }
-        return view('faker');
-
-        
-    }
-
-    public function retrieve_order_details()
-    {
-        /*$retrieve_order = "SELECT *
-                        FROM orders
-                        WHERE reciept_number = ".$this->verify_order()->$verify_reciept_number."";
-
-        $hold_retrieve_order = DB::select($retrieve_order);*/
-
-        /*foreach ($hold_checked_order as $held) {
-            $change_statuses = [
-                $held->payment_status = 'paid',
-                $held->delivery_status = 'delivered',
-                ];
-            
-            dd($change_statuses);
-        }*/
+        return view('reciept', compact('order'));
     }
 }

@@ -34,10 +34,6 @@ Route::get('/radio_checkbox', 'PaidOrderController@checkboxes');
 Route::get('/new_radio_checkbox', 'PaidOrderController@checkboxes');
 //end of radio buttn and checkboxes exercise
 
-//register link on login page
-Route::get('/register', function () {
-    return view('register');
-});
 /*Route::get('/pay', function () {
     return view('make_payment');
 });*/
@@ -56,7 +52,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/checked', 'PaidOrderController@verify_order')->name('checked');
 
 Route::post('/paid', 'PaidOrderController@save_customer_order');
-Route::post('/reciept', function(){
-	return view('reciept');
-});
+Route::get('/reciept', 'PaidOrderController@retrieve_order_details')->name('reciept');
 
