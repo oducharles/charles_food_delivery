@@ -42,14 +42,26 @@ class PaidOrderController extends Controller
 
         $verify_reciept_number = $request->get('reciept_number');
 
-        $status_update = DB::table('orders')
+        $retrieve_order = "SELECT reciept_number 
+                            FROM orders
+                            WHERE reciept_number = ".$verify_reciept_number."";
+
+        $hold_checked_order = DB::select($retrieve_order);
+
+        foreach ($hold_checked_order as $held) {
+
+                $status_update = DB::table('orders')
                                         ->where('reciept_number', $verify_reciept_number)
                                         ->update([
                                             'payment_status' => 'paid',
                                             'delivery_status' => 'delivered'
                                             ]);
         
-        return view('home', compact('hold_checked_order'));
+                return view('home', compact('status_update'));
+        }
+        return view('faker');
+
+        
     }
 
     public function retrieve_order_details()

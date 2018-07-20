@@ -59,3 +59,4 @@ Route::post('/paid', 'PaidOrderController@save_customer_order');
 Route::post('/reciept', function(){
 	return view('reciept');
 });
+
