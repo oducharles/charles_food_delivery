@@ -17,7 +17,9 @@
 				</div>
 			</div>
 		</div>
-		<a href="/paid"><div class="card-header">{{ ('View my Reciept') }}</div></a>
+		@if (Auth::check())
+		<a href="/my_reciept"><div class="card-header">{{ ('View my Reciept') }}</div></a>
+		@endif
 	</div>
 </div>
 @endsection

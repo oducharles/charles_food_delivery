@@ -52,5 +52,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/checked', 'PaidOrderController@verify_order')->name('checked');
 
 Route::post('/paid', 'PaidOrderController@save_customer_order');
+Route::get('/my_reciept', 'PaidOrderController@retrieve_order')->name('my_reciept');
 Route::get('/reciept', 'PaidOrderController@retrieve_order_details')->name('reciept');
 

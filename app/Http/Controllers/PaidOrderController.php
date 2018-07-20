@@ -60,4 +60,12 @@ class PaidOrderController extends Controller
         return view('reciept', compact('order', 'order_user'));
     }
 
+    public function retrieve_order()
+    {
+        $order_user = User::where('id', '=', Auth::User()->id )->first();
+        $order_details = Orders::where('user_id', '=', Auth::User()->id )->first();
+
+        return view('order_reciept', compact('order_user', 'order_details'));
+    }
+
 }

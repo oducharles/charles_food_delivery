@@ -7,7 +7,7 @@
                 <div class="card-header">{{ __('This is your Reciept') }}</div>
                 <div class="card-body">
                 	<div class="form-group row">
-                        <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Customer Name:') }}</label>
+                        <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Customer Name') }}</label>
                         <div class="col-md-6">
                         {{ $order_user->first_name }} {{ $order_user->last_name }}
                         </div>
