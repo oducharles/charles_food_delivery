@@ -62,6 +62,34 @@
                     </form>
                 </div>
             </div>
+            <div class="card">
+                <div class="card-header">{{ __('Current List of Foods') }}</div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Food Name</td>
+                            <td>Price</td>
+                            <td>Category</td>
+                            <td>Edit</td>
+                            <td>Delete</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if(isset($foods))
+                        @foreach($foods as $food)
+                        <tr>
+                            <td>{{ $food->food_name }}</td>
+                            <td>{{ $food->price }}</td>
+                            <td>{{ $food->category }}</td>
+                            <td><input type="button" class="btn btn-primary" name="edit" value="Edit"></td>
+                            <td><input type="button" class="btn btn-danger" name="edit" value="Delete"></td>
+                        </tr>
+                        @endforeach
+                        @endif
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Food;
 
 class AdminController extends Controller
@@ -23,14 +24,15 @@ class AdminController extends Controller
     		'price' => $request->price,
     		'category' => $request->food_type,
     	]);
-
-    	return view('add_food');
+         
+    	return redirect()->route('stored_food');
     }
 
     public function retrieve_foods()
     {
  
-    	$food = Food::with('food_name')->get();
-    	dd($food);
+    	$foods = DB::select('select * from foods');
+    	
+    	return view('add_food', compact('foods'));
     }
 }
