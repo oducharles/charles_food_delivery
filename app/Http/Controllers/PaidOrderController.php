@@ -34,7 +34,7 @@ class PaidOrderController extends Controller
 
         $order_user->save();
 
-    	return view('order_reciept', compact('order_details','order_user'));
+    	return view('order_reciept', compact('order_details','order_user'))->with('success', 'Thank you for ordering');
     }
 
     public function checkboxes(Request $request)

@@ -35,4 +35,11 @@ class AdminController extends Controller
     	
     	return view('add_food', compact('foods'));
     }
+
+    public function get_foods_name()
+    {
+    	$foods_to_order = DB::table('foods')->pluck('food_name','price');
+
+    	return view('localfood', compact('foods_to_order'));
+    }
 }

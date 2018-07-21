@@ -82,11 +82,8 @@
         $(".place-order").hide();
       });
       
-      $("#local_food_name").on("change", function(){
-        var localfood = document.getElementById('local_food_menu').value;
-        if (localfood === "beans") {
-          $("#loca_food_specifications").show();          
-        }
+      $("#local_food_menu").on("change", function(){
+          $("#loca_food_specifications").show();
       });
 
       $("#local_food_meal_time").on("change", function(){

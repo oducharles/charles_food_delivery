@@ -11,26 +11,26 @@
                         @csrf
 
                         <div class="form-group row" id="local_food_name">
-                            <label for="local_food_name" class="col-md-4 col-form-label text-md-right">{{ __('Food Name') }}</label>
+                            <label for="local_food_menu" class="col-md-4 col-form-label text-md-right">{{ __('Food Name') }}</label>
                             <div class="col-md-6" >
+
                                 <select id="local_food_menu" name="local_food_menu" autofocus required class="form-control" style="height: 35px !important;">
+
                                     <option>Select from our menu</option>
-                                    <optgroup label="Vegetarian">
-                                        <option value="beans">Beans</option>
-                                        <option value="peas">Pease</option>
-                                    </optgroup>
-                                    <optgroup label="Non-Vegetarian">
-                                        <option value="beeef">Beef</option>
-                                        <option value="chicken">Chicken</option>
-                                    </optgroup>
+                                    @foreach($foods_to_order as $food)
+                                    <option value="{{ $food }}">{{ $food }}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
+
                         <div id="loca_food_specifications">
                             <div class="form-group row" id="local_food_price">
                                 <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
                                 <div class="col-md-6">
-                                    <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="5000" required autofocus>
+                                    @foreach ($foods_to_order as $price => $food)
+                                    <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="{{ $price }}" required autofocus>
+                                    @endforeach
                                 </div>
                             </div><!--Price-->
 

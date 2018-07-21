@@ -42,13 +42,11 @@
                             <label for="food_type" class="col-md-4 col-form-label text-md-right">{{ __('Food Type') }}</label>
 
                             <div class="col-md-6">
-                                <input id="food_type" type="text" class="form-control{{ $errors->has('food_type') ? ' is-invalid' : '' }}" name="food_type" value="{{ old('food_type') }}"  required autofocus>
-
-                                @if ($errors->has('food_type'))
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $errors->first('food_type') }}</strong>
-                                    </span>
-                                @endif
+                                <select id="food_type" name="food_type" class="form-control" style="height: 35px !important;">
+                                    <option>Select Food Type</option>
+                                    <option value="localfood">Local Food</option>
+                                    <option value="takeaway">Take Away</option>
+                                </select>
                             </div>
                         </div>
 

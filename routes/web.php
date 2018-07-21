@@ -13,11 +13,6 @@
 
 Route::get('/', 'OrdersController@order_type'); //index page
 
-//local food menu
-Route::get('/localfood', function () {
-    return view('localfood');
-});
-
 //verify orders by deliveryman
 Route::get('/verify', function () {
     return view('verify_order');
@@ -34,10 +29,6 @@ Route::get('/radio_checkbox', 'PaidOrderController@checkboxes');
 Route::get('/new_radio_checkbox', 'PaidOrderController@checkboxes');
 //end of radio buttn and checkboxes exercise
 
-/*Route::get('/pay', function () {
-    return view('make_payment');
-});*/
-
 //my suggested empty template to be used
 Route::get('/app', function () {
     return view('app');
@@ -49,6 +40,9 @@ Route::get('/make_payment', 'OrdersController@place_order')->middleware('auth');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+//local food menu
+Route::get('/localfood', 'AdminController@get_foods_name')->name('localfood');
+
 Route::get('/checked', 'PaidOrderController@verify_order')->name('checked');
 
 Route::post('/paid', 'PaidOrderController@save_customer_order');

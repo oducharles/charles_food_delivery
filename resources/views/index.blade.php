@@ -9,11 +9,14 @@
 				<div class="links">
 					<div>
 						<a href="/localfood">
-					    	<img src=""/>
-					    	<input type="button" name="localfood" value="Local Food">
+							<img src="photos/local_food_pic.jpg" width="150px" height="auto"/><br><br>
+							<label id="localfood" name="localfood">Local Foods</label>
 					    </a>
 					</div>
-				    <a href="#">Take Aways</a>
+				    <a href="#">
+				    	<img src="photos/take_away_pic.jpg" width="150px" height="auto"/><br><br>
+				    	<label id="take_away" name="take_away">Local Foods</label>
+				    </a>
 				</div>
 			</div>
 		</div>
