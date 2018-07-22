@@ -25,6 +25,26 @@
       }
 
     </style>
+    <style>
+      .cardy {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 60%;
+          border-radius: 5px;
+      }
+
+      .cardy:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+
+      img {
+          border-radius: 5px 5px 0 0;
+      }
+
+      .conta {
+          padding: 2px 16px;
+      }
+    </style>
 
   </head>
 
@@ -82,11 +102,12 @@
         $(".place-order").hide();
       });
       
-      $("#local_food_menu").on("change", function(){
-          $("#loca_food_specifications").show();
+      $("#local_food_menu").on("click", function(){
+          $("#loca_food_specifications").show();          
+        
       });
 
-      $("#local_food_meal_time").on("change", function(){
+      $("#local_food_meal_time").on("click", function(){
         var meal_time = document.getElementById('meal_time').value;
         if (meal_time === "lunch") {
           $("#lunch_time").show();

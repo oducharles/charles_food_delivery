@@ -14,7 +14,7 @@
 					    </a>
 					</div>
 				    <a href="#">
-				    	<img src="photos/take_away_pic.jpg" width="150px" height="auto"/><br><br>
+				    	<img src="storage/take_away_pic.jpg" width="150px" height="auto"/><br><br>
 				    	<label id="take_away" name="take_away">Local Foods</label>
 				    </a>
 				</div>

@@ -10,27 +10,26 @@
                     <form method="GET" action="/make_payment">
                         @csrf
 
-                        <div class="form-group row" id="local_food_name">
-                            <label for="local_food_menu" class="col-md-4 col-form-label text-md-right">{{ __('Food Name') }}</label>
-                            <div class="col-md-6" >
-
-                                <select id="local_food_menu" name="local_food_menu" autofocus required class="form-control" style="height: 35px !important;">
-
-                                    <option>Select from our menu</option>
-                                    @foreach($foods_to_order as $food)
-                                    <option value="{{ $food }}">{{ $food }}</option>
-                                    @endforeach
-                                </select>
+                        @foreach($foods_to_order as $food)
+                        <div class="card-group" id="local_food_name">
+                          <div class="card">
+                            <img class="card-img-top" src="{{$food->food_photo}}" alt="Card image cap">
+                            <div class="card-body">
+                              <h5 class="card-title">{{$food->food_name}}</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                              <p class="card-text"><small class="text-muted">Take This</small></p>
                             </div>
+                          </div>
                         </div>
+                        @endforeach
+
 
                         <div id="loca_food_specifications">
                             <div class="form-group row" id="local_food_price">
                                 <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
                                 <div class="col-md-6">
-                                    @foreach ($foods_to_order as $price => $food)
-                                    <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="{{ $price }}" required autofocus>
-                                    @endforeach
+                                    <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="500" required autofocus>
+                                    
                                 </div>
                             </div><!--Price-->
 

@@ -49,4 +49,20 @@ class OrdersController extends Controller
         return view('make_payment', compact('my_orders', 'hold_my_info'));
     }
 
+    public function retrieve_all_foods()
+    {
+ 
+        $foods = DB::select('select * from foods');
+        
+        return view('add_food', compact('foods'));
+    }
+
+
+    public function retrieve_only_local_foods()
+    {
+        $foods_to_order = DB::table('foods')->where('category', '=', 'localfood')->get();
+
+        return view('localfood', compact('foods_to_order'));
+    }
+
 }
