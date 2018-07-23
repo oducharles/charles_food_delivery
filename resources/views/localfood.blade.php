@@ -1,4 +1,4 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -16,7 +16,7 @@
                                     <img class="card-img-top" src="{{$food->food_photo}}" width="10px" height="auto" alt="Card image cap">
                                     <div class="card-body">
                                         <input type="hidden" name="local_food_menu" value="{{$food->food_name}}">
-                                        <h5 class="card-title"><h4>{{$food->food_name}}</h4></h5>
+                                        <h4 class="card-title">{{$food->food_name}}</h4>
                                         <p class="card-text">This is a placeholder for food details. To be impelemented later.</p>
                                         <p class="card-text"><small class="text-muted">Take This</small></p>
                                     </div>
@@ -29,7 +29,7 @@
                                 <div class="form-group row" id="local_food_price">
                                     <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
                                     <div class="col-md-6">
-                                        <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="6000" required autofocus>
+                                        <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="{{$food->price}}" required autofocus>
                                         
                                     </div>
                                 </div><!--Price-->

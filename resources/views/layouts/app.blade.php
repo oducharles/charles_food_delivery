@@ -76,7 +76,7 @@
             @yield('content')
         </main>
     </div>
-        <script src="{{ URL::asset('all_jquery/jquery-3.3.1.js') }}"></script>
+    <script src="{{ URL::asset('all_jquery/jquery-3.3.1.js') }}"></script>
     <script>
 
       $( document ).ready( function(){
@@ -86,14 +86,12 @@
         $(".place-order").hide();
       });
       
-      $("#local_food_name").on("change", function(){
-        var localfood = document.getElementById('local_food_menu').value;
-        if (localfood === "beans") {
+      $("#local_food_name").on("click", function(){
           $("#loca_food_specifications").show();          
-        }
+        
       });
 
-      $("#local_food_meal_time").on("change", function(){
+      $("#local_food_meal_time").on("click", function(){
         var meal_time = document.getElementById('meal_time').value;
         if (meal_time === "lunch") {
           $("#lunch_time").show();
