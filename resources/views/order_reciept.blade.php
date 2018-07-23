@@ -25,12 +25,12 @@
                     <div class="form-group row"> -->
                         <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Quantity:') }}</label>
                         <div class="col-md-6">
-                		{{ $order_details['quantity'] }}
+                		{{ $order_details['quantity'] }}{{ ('  Plates') }}
                         </div>
                     <!-- </div>
 
                     <div class="form-group row"> -->
-                        <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Amount:') }}</label>
+                        <label for="reciept_number" class="col-md-4 text-md-right">{{ __('Total amount:') }}</label>
                         <div class="col-md-6">
                 		{{ $order_details['price'] }}
                         </div>

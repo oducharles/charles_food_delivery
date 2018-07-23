@@ -11,7 +11,9 @@
 |
 */
 
-Route::get('/', 'OrdersController@order_type'); //index page
+Route::get('/', function (){
+	return view('index');
+}); //index page
 
 //verify orders by deliveryman
 Route::get('/verify', function () {
@@ -42,6 +44,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //local food menu
 Route::get('/localfood', 'OrdersController@retrieve_only_local_foods')->name('localfood');
+
+Route::get('/food_price/{id}', 'OrdersController@get_food_price')->name('food_price');
 
 Route::get('/checked', 'PaidOrderController@verify_order')->name('checked');
 

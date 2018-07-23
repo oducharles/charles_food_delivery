@@ -20,7 +20,6 @@ class PaidOrderController extends Controller
     	$order_details = Orders::create([
     		'user_id' =>Auth::User()->id,
     		'food_name' =>$request->food_name,
-    		'order_category' =>'yes',
 			'quantity' =>$request->quantity,
 			'price' =>$request->price,
 			'delivery_time' =>$request->expected_time,

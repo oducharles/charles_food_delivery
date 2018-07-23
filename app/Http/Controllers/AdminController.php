@@ -10,10 +10,7 @@ use Storage;
 class AdminController extends Controller
 {
     //Make sure you add the a constructor with the Auth tests
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
+	
 
     public function add_food(Request $request)
     {
