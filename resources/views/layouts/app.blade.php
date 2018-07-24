@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ ('MyFoods') }}</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ ('MyFoods') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -45,13 +45,31 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="">{{ __('Home') }}</a>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                             </li>                            
                         @else
                             <li class="nav-item dropdown">
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">{{ __('Home') }}</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/stored_food">{{ __('Register Foods') }}</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="">{{ __('View All Orders') }}</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/verify">{{ __('Verify Orders') }}</a>
+                                </li>
+
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <span class="caret"></span>
+                                    {{ Auth::user()->first_name }} <span class="caret"></span>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -76,32 +94,40 @@
             @yield('content')
         </main>
     </div>
-    <script src="{{ URL::asset('all_jquery/jquery-3.3.1.js') }}"></script>
+
+    <script src="{{ URL::asset('/all_jquery/jquery-3.3.1.js') }}"></script>
     <script>
 
-      $( document ).ready( function(){
-        $("#loca_food_specifications").hide();
-        $("#lunch_time").hide();
-        $("#supper_time").hide();
-        $(".place-order").hide();
-      });
-      
-      $("#local_food_name").on("click", function(){
-          $("#loca_food_specifications").show();          
-        
-      });
+        $( document ).ready( function(){
+            $("#loca_food_specifications").hide();
+            $("#lunch_time").hide();
+            $("#supper_time").hide();
+            $(".place-order").hide();
+        });
 
-      $("#local_food_meal_time").on("click", function(){
-        var meal_time = document.getElementById('meal_time').value;
-        if (meal_time === "lunch") {
-          $("#lunch_time").show();
-          $(".place-order").show();
-        }
-        if (meal_time === "supper") {
-          $("#supper_time").show();
-          $(".place-order").show();
-        }
-      });
+        $(function() {
+            $(".local_food_name").on("click", function(){
+              $("#price").val(this.getAttribute("price"));
+                
+              });
+        });
+
+        $("#local_food_name").on("click", function(){
+            $("#loca_food_specifications").show();          
+
+        });
+
+        $("#local_food_meal_time").on("click", function(){
+            var meal_time = document.getElementById('meal_time').value;
+            if (meal_time === "lunch") {
+                  $("#lunch_time").show();
+                  $(".place-order").show();
+            }
+            if (meal_time === "supper") {
+                $("#supper_time").show();
+                $(".place-order").show();
+            }
+        });
     </script>
 </body>
 </html>

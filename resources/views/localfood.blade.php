@@ -10,26 +10,25 @@
                     <form method="GET" action="/make_payment">
                         @csrf
 
-                        <div class="card-group" id="local_food_name">
+                        <div class="card-group">
                             @foreach($foods_to_order as $food)
-                                <div class="card">
-                                    <img class="card-img-top" src="{{$food->food_photo}}" width="10px" height="auto" alt="Card image cap">
+                                <div class="card local_food_name" id="local_food_name" price="{{$food->price}}" food_name="{{$food->food_name}}">
+                                    <img class="card-img-top" src="{{$food->food_photo}}" style="height: 170px !important; padding: 2px; border-radius: 5px;" alt="Card image cap">
                                     <div class="card-body">
-                                        <input type="hidden" name="local_food_menu" value="{{$food->food_name}}">
                                         <h4 class="card-title">{{$food->food_name}}</h4>
-                                        <p class="card-text">This is a placeholder for food details. To be impelemented later.</p>
+                                        <p class="card-text" style="height: 150px !important;">This is a placeholder for food details. To be impelemented later.</p>
                                         <p class="card-text"><small class="text-muted">Take This</small></p>
                                     </div>
                                 </div>
                             @endforeach
                         </div><br>
-
+                        <input id="foody" type="hidden"  name="local_food_menu">
                         <div id="loca_food_specifications">
                             <div class="card"><br>
                                 <div class="form-group row" id="local_food_price">
                                     <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
                                     <div class="col-md-6">
-                                        <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" value="{{$food->price}}" required autofocus>
+                                        <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" required autofocus>
                                         
                                     </div>
                                 </div><!--Price-->
@@ -87,4 +86,5 @@
         </div>
     </div>
 </div>
+
 @endsection

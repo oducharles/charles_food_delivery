@@ -17,6 +17,7 @@ class PaidOrderController extends Controller
 			'phone_confirm' =>'required',
     	]);
 
+        // dd($request->all());
     	$order_details = Orders::create([
     		'user_id' =>Auth::User()->id,
     		'food_name' =>$request->food_name,
@@ -43,20 +44,23 @@ class PaidOrderController extends Controller
 
     public function verify_order(Request $request)
     {
-
-        $this->validate($request, [
+        if(User::is_delivery_man()) {
+            
+            $this->validate($request, [
             'reciept_number' => 'required | exists:orders'
-        ]);
+            ]);
 
-        $order = Orders::where('reciept_number', '=', $request->reciept_number )->first();
+            $order = Orders::where('reciept_number', '=', $request->reciept_number )->first();
 
-        $order_user = User::where('id', '=', $order->user_id )->first();
+            $order_user = User::where('id', '=', $order->user_id )->first();
 
-        $order->payment_status = 'paid';
-        $order->delivery_status = 'delivered';
-        $order->save();
+            $order->payment_status = 'paid';
+            $order->delivery_status = 'delivered';
+            $order->save();
 
-        return view('reciept', compact('order', 'order_user'));
+            return view('reciept', compact('order', 'order_user'));
+        }
+        
     }
 
     public function retrieve_order()

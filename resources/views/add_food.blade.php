@@ -45,7 +45,7 @@
 
                             <div class="col-md-6">
                                 <select id="food_type" name="food_type" class="form-control" style="height: 35px !important;">
-                                    <option>Select Food Type</option>
+                                    <option value="$edit_food['category']">{{$edit_food['category']}}</option>
                                     <option value="localfood">Local Food</option>
                                     <option value="takeaway">Take Away</option>
                                 </select>

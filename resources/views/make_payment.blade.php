@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -9,7 +9,7 @@
                 <div class="card-body">
                     <form method="POST" action="/paid" aria-label="{{ __('Make Payment') }}">
                         @csrf
-
+                        
                         @if(empty($my_orders))
 
                         @else
@@ -49,6 +49,9 @@
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Complete Payment') }}
                                 </button>
+                                <a href="/">
+                                    <input type="button" class="btn btn-danger" name="clear" value="{{ __('Cancel Order') }}">
+                                </a>
                             </div>
                         </div>
                     </form>

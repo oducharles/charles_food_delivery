@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Food;
 use Storage;
+use File;
 
 class AdminController extends Controller
 {
@@ -74,6 +75,7 @@ class AdminController extends Controller
     {
     	$edit_food = Food::where('id','=',$id);
     	$edit_food->delete();
+    	// File::delete($edit_food);
 
     	return redirect()->route('stored_food');
     }

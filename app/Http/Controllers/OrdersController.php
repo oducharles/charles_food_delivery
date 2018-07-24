@@ -24,7 +24,6 @@ class OrdersController extends Controller
     	]);
 
         $total_price_of_order = $request->quantity * $request->price;
-        
 
 		$my_orders = [
 			'food_name' => $request->get('local_food_menu'),
@@ -47,10 +46,12 @@ class OrdersController extends Controller
 
     public function retrieve_all_foods()
     {
- 
-        $foods = DB::select('select * from foods');
+        if(User::is_manager()){
+            $foods = DB::select('select * from foods');
         
-        return view('add_food', compact('foods'));
+            return view('add_food', compact('foods'));
+        }
+        
     }
 
 
