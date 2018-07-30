@@ -24,7 +24,7 @@ class PaidOrderController extends Controller
 			'quantity' =>$request->quantity,
 			'price' =>$request->price,
 			'delivery_time' =>$request->expected_time,
-			'reciept_number' =>Auth::User()->id
+			'reciept_number' =>str_random(10),
     	]);
 
         $order_user = User::where('id', '=', Auth::User()->id )->first();
