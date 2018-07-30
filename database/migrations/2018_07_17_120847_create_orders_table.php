@@ -15,12 +15,9 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('user_id');
-            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedInteger ('user_id');
             $table->string('food_name');
-            $table->foreign('food_name')->references('food_name')->on('foods');
             $table->string('order_category');
-            $table->foreign('order_category')->references('order_type')->on('ordercategorgies');
             $table->integer('quantity');
             $table->integer('price');
             $table->string('delivery_time');
@@ -28,6 +25,10 @@ class CreateOrdersTable extends Migration
             $table->string('reciept_number');
             $table->enum('delivery_status',['waiting','delivered']);
             $table->timestamps();
+
+
+
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 
