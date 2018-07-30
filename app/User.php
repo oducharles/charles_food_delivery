@@ -29,15 +29,17 @@ class User extends Authenticatable
     public static function is_manager()
     {
         $logged_in_user = "manager@food.com";
-        if(Auth::User()->email == $logged_in_user)
+        if(Auth::User()->email === $logged_in_user)
             return true;
+        return false;
     }
 
     public static function is_delivery_man()
     {
         $logged_user = "man1@delivery.com";
-        if(Auth::User()->email == $logged_user)
+        if(Auth::User()->email === $logged_user)
             return true;
+        return false;
     }
 
 }

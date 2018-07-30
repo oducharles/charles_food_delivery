@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-				<div class="card-header">{{ ('What do you feel like eating today?') }}</div>
+				<div class="card-header"><h2>{{ ('What do you feel like eating today?') }}</h2></div>
 
 				<div class="links">
 					<div class="card-group" id="local_food_name">
@@ -20,7 +20,7 @@
                         </div>
 
                         <div class="card">
-                            <a href="#">
+                            <a href="/take_away">
                                 <img class="card-img-top" src="storage/take_away_pic.jpg" style="height: 170px !important; padding: 2px; border-radius: 5px;" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Take Away</h5>

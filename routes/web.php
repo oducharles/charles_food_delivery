@@ -16,8 +16,8 @@ Route::get('/', function (){
 }); //index page
 
 //verify orders by deliveryman
-Route::get('/verify', function () {
-    return view('verify_order');
+Route::get('/admin', function (){
+return view('admin_index');
 });
 
 //strat of radio button and checkboxes exercises
@@ -44,6 +44,7 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 //local food menu
 Route::get('/localfood', 'OrdersController@retrieve_only_local_foods')->name('localfood');
+Route::get('/take_away', 'OrdersController@retrieve_only_take_away')->name('take_away');
 
 Route::get('/food_price/{id}', 'OrdersController@get_food_price')->name('food_price');
 

@@ -90,7 +90,7 @@
         <script  src="{{asset('all_jquery/jquery-3.3.1.js') }}"></script>
     <script>
         $(".localfood").on("change", function() {
-            alet("Ok");
+            alert("Ok");
             var localfood = document.getElementById('localfood').value;
             if(localfood = "vegetarian"){
                 alert("Its Ok now")

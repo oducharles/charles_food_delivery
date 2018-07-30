@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>{{ ('MyFoods') }}</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -126,12 +126,17 @@
         $(".local_food_name").on("click", function(){
           $("#price").val(this.getAttribute("price"));
           $("#foody").val(this.getAttribute("food_name"));
+          
             
           });
       });
        
       $(".local_food_name").on("click", function(){
-          $("#loca_food_specifications").show();          
+        $( this ).fadeTo( "slow" , 0.5, function() {
+        });
+          $("#loca_food_specifications").show();
+
+
         
       });
 

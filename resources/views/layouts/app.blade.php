@@ -43,7 +43,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="">{{ __('Home') }}</a>
+                                <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                             </li>
 
                             <li class="nav-item">
@@ -53,9 +53,9 @@
                             <li class="nav-item dropdown">
 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('Home') }}</a>
+                                    <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                                 </li>
-
+<!-- 
                                 <li class="nav-item">
                                     <a class="nav-link" href="/stored_food">{{ __('Register Foods') }}</a>
                                 </li>
@@ -66,7 +66,7 @@
 
                                 <li class="nav-item">
                                     <a class="nav-link" href="/verify">{{ __('Verify Orders') }}</a>
-                                </li>
+                                </li> -->
 
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->first_name }} <span class="caret"></span>
@@ -95,38 +95,49 @@
         </main>
     </div>
 
-    <script src="{{ URL::asset('/all_jquery/jquery-3.3.1.js') }}"></script>
+    <script src="{{ URL::asset('../all_jquery/jquery-3.3.1.js') }}"></script>
     <script>
 
-        $( document ).ready( function(){
+        $(function() {
+
             $("#loca_food_specifications").hide();
             $("#lunch_time").hide();
             $("#supper_time").hide();
             $(".place-order").hide();
-        });
 
-        $(function() {
+
+      
             $(".local_food_name").on("click", function(){
-              $("#price").val(this.getAttribute("price"));
-                
-              });
-        });
+                $("#foodorder").text(this.getAttribute("food_name"));
+                $("#price").val(this.getAttribute("price"));
+                $("#foody").val(this.getAttribute("food_name"));
 
-        $("#local_food_name").on("click", function(){
-            $("#loca_food_specifications").show();          
+            });
 
-        });
+            $(".local_food_name").on("click", function(){
+                $( this ).fadeTo( "slow" , 0.5, function() {
 
-        $("#local_food_meal_time").on("click", function(){
-            var meal_time = document.getElementById('meal_time').value;
-            if (meal_time === "lunch") {
+                $("#loca_food_specifications").show();
+                });
+
+            });
+           
+            $(".local_food_name").on("click", function(){
+              $("#loca_food_specifications").show();          
+
+            });
+
+            $("#local_food_meal_time").on("click", function(){
+                var meal_time = document.getElementById('meal_time').value;
+                if (meal_time === "lunch") {
                   $("#lunch_time").show();
                   $(".place-order").show();
-            }
-            if (meal_time === "supper") {
-                $("#supper_time").show();
-                $(".place-order").show();
-            }
+                }
+                if (meal_time === "supper") {
+                  $("#supper_time").show();
+                  $(".place-order").show();
+                }
+            });
         });
     </script>
 </body>

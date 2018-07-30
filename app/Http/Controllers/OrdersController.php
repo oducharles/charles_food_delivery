@@ -59,7 +59,14 @@ class OrdersController extends Controller
     {
         $foods_to_order = DB::table('foods')->where('category', '=', 'localfood')->get();
         // dd($foods_to_order);
-        return view('localfood', compact('foods_to_order'));
+        return view('order_food', compact('foods_to_order'));
+    }
+
+     public function retrieve_only_take_away()
+    {
+        $foods_to_order = DB::table('foods')->where('category', '=', 'takeaway')->get();
+        // dd($foods_to_order);
+        return view('order_food', compact('foods_to_order'));
     }
 /*
     public function get_food_price($id)

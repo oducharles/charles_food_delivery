@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $this->call(UsersTableSeeder::class);
-        $faker = Faker::create();
+        /*$faker = Faker::create();
         foreach (range(1,5) as $index) {
         	$my_category = DB::table('ordercategorgies')->insert([
 	        	'order_type' => $faker->randomElement(['local food' ,'take away']),
@@ -31,7 +31,7 @@ class DatabaseSeeder extends Seeder
 	        	'price' => $faker->randomDigitNotNull,
 	        	'category' => $faker->randomElement($orders),
 	        ]);
-        }
+        }*/
         // dd($my_food);
         
     }

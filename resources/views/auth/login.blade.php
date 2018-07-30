@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.app')
 
 @section('content')
 <div class="container">
@@ -10,10 +10,20 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
                         @csrf
+                        <div align="center">
+                            <div>
+                                {{('Manager: Username:manager@food.com, password:manager')}}
+                            </div>
+                            <div>
+                                {{('Delivery Man: Username:man1@delivery.com, password:deliver1')}}
+                            </div>
+                            <div>
+                                {{('Customer: Username:joel@okello.com, password:joel123')}}
+                            </div> 
+                        </div><br><br>
 
                         <div class="form-group row">
                             <label for="email" class="col-sm-4 col-form-label text-md-right">{{ __('Username') }}</label>
-
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
 

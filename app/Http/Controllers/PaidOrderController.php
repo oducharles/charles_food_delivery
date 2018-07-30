@@ -44,7 +44,6 @@ class PaidOrderController extends Controller
 
     public function verify_order(Request $request)
     {
-        if(User::is_delivery_man()) {
             
             $this->validate($request, [
             'reciept_number' => 'required | exists:orders'
@@ -59,7 +58,6 @@ class PaidOrderController extends Controller
             $order->save();
 
             return view('reciept', compact('order', 'order_user'));
-        }
         
     }
 

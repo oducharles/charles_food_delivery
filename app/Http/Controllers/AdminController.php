@@ -82,7 +82,7 @@ class AdminController extends Controller
 
 
 
-    /*//select function for foods retrieved as in the database
+    /*//drop-down list function for a select for foods retrieved as in the database
     public function get_foods_select()
     {
     	$foods_to_order = DB::table('foods')->pluck('food_name','price');

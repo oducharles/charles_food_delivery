@@ -1,10 +1,10 @@
-@extends('app')
+@extends('layouts.app')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Select Local food of your interest') }}</div>
+                <div class="card-header"><h2>{{ __('Select Food of your interest') }}</h2></div>
 
                 <div class="card-body">
                     <form method="GET" action="/make_payment">
@@ -24,9 +24,10 @@
                         </div><br>
                         <input id="foody" type="hidden"  name="local_food_menu">
                         <div id="loca_food_specifications">
+                            <h2 id="foodorder"></h2>
                             <div class="card"><br>
                                 <div class="form-group row" id="local_food_price">
-                                    <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Price') }}</label>
+                                    <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Unit Price') }}</label>
                                     <div class="col-md-6">
                                         <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" required autofocus>
                                         
@@ -36,7 +37,7 @@
                                 <div class="form-group row" id="local_food_quantity">
                                     <label for="quantity" class="col-md-4 col-form-label text-md-right">{{ __('Quantity') }}</label>
                                     <div class="col-md-6">
-                                        <input type="text" class="form-control{{ $errors->has('quantity') ? ' is-invalid' : '' }}" value="1" name="quantity" id="quantity" required>
+                                        <input type="text" id="qty" class="form-control{{ $errors->has('quantity') ? ' is-invalid' : '' }}" style="width: 50px !important;" value="1" name="quantity" id="quantity" required>
                                     </div>
                                 </div><!--Quantity-->
 
