@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use App\Food;
-use Storage;
 use File;
 
 class AdminController extends Controller
@@ -21,7 +21,7 @@ class AdminController extends Controller
     		'food_name' => 'required',
     		'price' => 'required',
     		'food_type' => 'required',
-    		'food_photo' => 'required | file',
+    		'food_photo' => 'required|file|image|mimes:jpeg,png,gif,jpg,webp', //|max:2048',
     	]);
 
     	$path = Storage::url($request->file('food_photo')->store('public'));
@@ -56,6 +56,7 @@ class AdminController extends Controller
     		'food_photo' => 'required | file',
     	]);
 
+
     	$new_photo = Storage::url($request->file('food_photo')->store('public'));
 
     	$save_food_update = Food::where('id','=',$id)->first();
@@ -63,6 +64,7 @@ class AdminController extends Controller
     	$save_food_update->food_name = $request->food_name;
     	$save_food_update->price = $request->price;
     	$save_food_update->category = $request->food_type;
+        Storage::delete($save_food_update->food_photo);
     	$save_food_update->food_photo = $new_photo;
 
 		$save_food_update->save();    	
@@ -73,14 +75,14 @@ class AdminController extends Controller
 
     public function delete_food($id)
     {
-    	$edit_food = Food::where('id','=',$id);
+    	// $edit_food = Food::where('id','=',$id);
+        $edit_food = Food::find($id);
+        unlink(public_path($edit_food->food_photo));
+        //Storage::del($edit_food->food_photo);
     	$edit_food->delete();
-    	// File::delete($edit_food);
 
     	return redirect()->route('stored_food');
     }
-
-
 
     /*//drop-down list function for a select for foods retrieved as in the database
     public function get_foods_select()

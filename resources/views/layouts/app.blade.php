@@ -101,43 +101,32 @@
         $(function() {
 
             $("#loca_food_specifications").hide();
-            $("#lunch_time").hide();
-            $("#supper_time").hide();
             $(".place-order").hide();
-
-
       
             $(".local_food_name").on("click", function(){
                 $("#foodorder").text(this.getAttribute("food_name"));
                 $("#price").val(this.getAttribute("price"));
                 $("#foody").val(this.getAttribute("food_name"));
-
             });
 
             $(".local_food_name").on("click", function(){
                 $( this ).fadeTo( "slow" , 0.5, function() {
-
                 $("#loca_food_specifications").show();
                 });
-
-            });
-           
-            $(".local_food_name").on("click", function(){
-              $("#loca_food_specifications").show();          
-
             });
 
-            $("#local_food_meal_time").on("click", function(){
-                var meal_time = document.getElementById('meal_time').value;
-                if (meal_time === "lunch") {
-                  $("#lunch_time").show();
-                  $(".place-order").show();
-                }
-                if (meal_time === "supper") {
-                  $("#supper_time").show();
-                  $(".place-order").show();
-                }
+            $(".meal_times_select").on("change", function(){
+                $(".place-order").show();
             });
+
+            $('.deletefood').on('submit', function(){
+            if (confirm("Are you sure you want to delete this food?")){
+                return true;
+            } else {
+                return false;
+            }
+        });
+
         });
     </script>
 </body>

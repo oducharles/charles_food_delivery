@@ -1,4 +1,4 @@
-@extends('home')
+@extends('layouts.app')
 @section('content')
 
 <div class="container">
@@ -186,7 +186,7 @@
                                 </a>
                             </td>
                             <td>
-                                <form method="POST" action="{{ url('delete_food',$food->id) }}">
+                                <form method="POST" action="{{ url('delete_food',$food->id) }}" class="deletefood">
                                     @csrf
                                     <input type="submit" class="btn btn-danger" name="submit" value="Delete">
                                 </form>
