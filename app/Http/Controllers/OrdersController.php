@@ -19,7 +19,7 @@ class OrdersController extends Controller
     		// 'local_food_menu' => 'required',
     		'price' => 'required',
     		'quantity' => 'required',
-    		'meal_time' => 'required',
+    		//'meal_time' => 'required',
     		'expected_time' => 'required',
     	]);
 
@@ -29,7 +29,7 @@ class OrdersController extends Controller
 			'food_name' => $request->get('local_food_menu'),
 			'price' =>$total_price_of_order,
 			'quantity' =>$request->get('quantity'),
-			'meal_time' =>$request->get('meal_time'),
+			//'meal_time' =>$request->get('meal_time'),
 			'expected_time' =>$request->get('expected_time'),
 		];
 

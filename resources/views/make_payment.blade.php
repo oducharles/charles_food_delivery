@@ -16,7 +16,6 @@
                             <input name="food_name" value="{{ $my_orders['food_name'] }}" hidden>
                             <input name="price" value="{{ $my_orders['price'] }}" hidden>
                             <input name="quantity" value="{{ $my_orders['quantity'] }}" hidden>
-                            <input name="meal_time" value="{{ $my_orders['meal_time'] }}" hidden>
                             <input name="expected_time" value="{{ $my_orders['expected_time'] }}" hidden>
                         @endif
 

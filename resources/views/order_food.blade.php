@@ -40,37 +40,23 @@
                                         <input type="text" id="qty" class="form-control{{ $errors->has('quantity') ? ' is-invalid' : '' }}" style="width: 50px !important;" value="1" name="quantity" id="quantity" required>
                                     </div>
                                 </div><!--Quantity-->
-
-                                <div class="form-group row" id="local_food_meal_time">
-                                    <label for="delivery_time" class="col-md-4 col-form-label text-md-right">{{ __('Meal Time') }}</label>
-                                    <div class="col-md-6">
-                                        <select id="meal_time" name="meal_time" class="form-control" style="height: 35px !important;">
-                                            <option>Select Meal Time</option>
-                                            <option value="lunch">Lunch Time</option>
-                                            <option value="supper">Supper Time</option>
-                                        </select>
-                                    </div>
-                                </div><!--Meal Time-->
                                 <div id="expected_by">
-                                    <div class="form-group row" id="lunch_time">
-                                        <label for="expected_time" class="col-md-4 col-form-label text-md-right">{{ __('Expected Time') }}</label>
+                                    <div class="form-group row" id="expected_by">
+                                        <label for="expected_time" class="col-md-4 col-form-label text-md-right">{{ __('Expected Delivery Time') }}</label>
                                         <div class="col-md-6">
-                                            <select id="lunch_expected_time" class="form-control" style="height: 35px !important;" name="expected_time">
-                                                <option value="1:00 pm">1:00pm</option>
-                                                <option value="2:30 pm">2:30 pm</option>
+                                            <select id="expected_time" class="form-control meal_times_select" style="height: 35px !important;" name="expected_time">
+                                                <option class="meal_times" value="">Select Time</option>
+                                                <optgroup label="Lunch Time">
+                                                    <option class="lunch_time" value="1:00 pm">1:00pm</option>
+                                                    <option class="lunch_time" value="2:30 pm">2:30 pm</option>
+                                                </optgroup>
+                                                <optgroup label="Supper Time">
+                                                    <option class="super_time" value="7:00 pm">7:00pm</option>
+                                                    <option class="super_time" value="9:00 pm">9:00 pm</option>
+                                                </optgroup>
                                             </select>
                                         </div>
-                                    </div><!--Expected Time for Lunch-->
-
-                                    <div class="form-group row" id="supper_time">
-                                        <label for="expected_time" class="col-md-4 col-form-label text-md-right">{{ __('Expected Time') }}</label>
-                                        <div class="col-md-6">
-                                            <select id="supper_expected_time" class="form-control" style="height: 35px !important;" name="expected_time">
-                                                <option value="1:00 pm">7:00pm</option>
-                                                <option value="2:30 pm">9:00 pm</option>
-                                            </select>
-                                        </div>
-                                    </div><!--Expected Time for Supper-->
+                                    </div><!--Expected Time-->
                                 </div>
                             </div>
                         </div>
