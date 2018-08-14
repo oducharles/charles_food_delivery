@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-8">
             <div class="card">
                 @if(isset($edit_food))
                 <div class="card-header">{{ __('Edit Food Details') }}</div>
@@ -83,8 +83,8 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
-            <div class="card">
+        <div class="col-md-14">
+            <div class="card" >
                 <div class="card-header">{{ __('Add Foods') }}</div>
 
                 <div class="card-body">
@@ -179,7 +179,7 @@
                             <td>{{ $food->food_name }}</td>
                             <td>{{ $food->price }}</td>
                             <td>{{ $food->category }}</td>
-                            <td><img src="{{$food->food_photo}}" height="100px" width="auto"></td>
+                            <td><img src="{{$food->food_photo}}" height="auto" width="120px" style="border-radius: 5px;"></td>
                             <td>
                                 <a href="{{url('edit_food',$food->id)}}">
                                     <input type="button" class="btn btn-primary" name="edit" value="Edit">

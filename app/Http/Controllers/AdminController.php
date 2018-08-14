@@ -60,7 +60,7 @@ class AdminController extends Controller
 
     	$new_photo = Storage::url($request->file('food_photo')->store('public'));
 
-    	$save_food_update = Food::find($id)->first();
+    	$save_food_update = Food::find($id);
     	
     	$save_food_update->food_name = $request->food_name;
     	$save_food_update->price = $request->price;

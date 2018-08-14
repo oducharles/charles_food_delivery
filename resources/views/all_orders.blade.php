@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-14">
 		    <div class="card" >
-		        <div class="card-header">{{ __('List of all Orders') }}</div>
+		        <div class="card-header" align="center" style="font-size: 20px;">{{ __('List of all Orders') }}</div>
 
 		        <table class="table table-striped table-bordered">
 		            <thead>
