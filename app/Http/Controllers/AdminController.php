@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use App\Food;
+use App\Orders;
 use File;
 
 class AdminController extends Controller
@@ -59,12 +60,12 @@ class AdminController extends Controller
 
     	$new_photo = Storage::url($request->file('food_photo')->store('public'));
 
-    	$save_food_update = Food::where('id','=',$id)->first();
+    	$save_food_update = Food::find($id)->first();
     	
     	$save_food_update->food_name = $request->food_name;
     	$save_food_update->price = $request->price;
     	$save_food_update->category = $request->food_type;
-        Storage::delete($save_food_update->food_photo);
+        unlink(public_path($save_food_update->food_photo));
     	$save_food_update->food_photo = $new_photo;
 
 		$save_food_update->save();    	
@@ -82,6 +83,28 @@ class AdminController extends Controller
     	$edit_food->delete();
 
     	return redirect()->route('stored_food');
+    }
+
+    public function view_all_orders()
+    {
+        $query_all_orders = "SELECT orders.food_name,
+                        orders.quantity,
+                        orders.price,
+                        orders.delivery_time,
+                        orders.payment_status,
+                        orders.reciept_number,
+                        orders.delivery_status,
+                        orders.created_at,
+
+                        concat(customers.first_name,' ',customers.last_name) AS customer
+
+                    FROM orders, users AS customers
+
+                    WHERE user_id = customers.id";
+        $all_orders = DB::select($query_all_orders);
+        //$total_income = Sum($all_orders->orders.price);
+        //dd($total_income);
+        return view('all_orders', compact('all_orders'));
     }
 
     /*//drop-down list function for a select for foods retrieved as in the database
