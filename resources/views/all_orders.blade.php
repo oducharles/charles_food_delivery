@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-16">
+        <div class="col-md-14">
 		    <div class="card" >
 		        <div class="card-header">{{ __('List of all Orders') }}</div>
 

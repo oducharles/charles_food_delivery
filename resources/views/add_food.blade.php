@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 @if(isset($edit_food))
                 <div class="card-header">{{ __('Edit Food Details') }}</div>
@@ -44,7 +44,7 @@
                             <label for="food_type" class="col-md-4 col-form-label text-md-right">{{ __('Food Type') }}</label>
 
                             <div class="col-md-6">
-                                <select id="food_type" name="food_type" class="form-control" style="height: 35px !important;">
+                                <select id="food_type" name="food_type" class="form-control" style="height: 45px !important;">
                                     <option value="$edit_food['category']">{{$edit_food['category']}}</option>
                                     <option value="localfood">Local Food</option>
                                     <option value="takeaway">Take Away</option>
@@ -83,7 +83,7 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">{{ __('Add Foods') }}</div>
 
@@ -123,7 +123,7 @@
                             <label for="food_type" class="col-md-4 col-form-label text-md-right">{{ __('Food Type') }}</label>
 
                             <div class="col-md-6">
-                                <select id="food_type" name="food_type" class="form-control" style="height: 35px !important;">
+                                <select id="food_type" name="food_type" class="form-control" style="height: 45px !important;">
                                     <option>Select Food Type</option>
                                     <option value="localfood">Local Food</option>
                                     <option value="takeaway">Take Away</option>

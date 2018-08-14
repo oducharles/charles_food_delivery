@@ -46,11 +46,11 @@ class OrdersController extends Controller
 
     public function retrieve_all_foods()
     {
-        if(User::is_manager()){
+        //if(User::is_manager()){
             $foods = DB::select('select * from foods');
         
             return view('add_food', compact('foods'));
-        }
+        //}
         
     }
 

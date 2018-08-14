@@ -85,12 +85,12 @@
     <!--Mainmenu-area/-->
 
     <!--Header-area-->
-    <div class="header-area relative overlay" id="home-page"><!--full-height relative overlay full-height v-center--> 
+    <header class="header-area relative overlay" id="home-page"><!--relative overlay full-height v-center--> 
         <div class="absolute anlge-bg"></div>
-        <main class="py-4">
+        <main class="py-4" style="text-align: center;">
             @yield('content')
         </main>
-    </div>
+    </header>
     <!--Header-area/-->
 
 

@@ -88,19 +88,19 @@ class AdminController extends Controller
     public function view_all_orders()
     {
         $query_all_orders = "SELECT orders.food_name,
-                        orders.quantity,
-                        orders.price,
-                        orders.delivery_time,
-                        orders.payment_status,
-                        orders.reciept_number,
-                        orders.delivery_status,
-                        orders.created_at,
+                                    orders.quantity,
+                                    orders.price,
+                                    orders.delivery_time,
+                                    orders.payment_status,
+                                    orders.reciept_number,
+                                    orders.delivery_status,
+                                    orders.created_at,
 
-                        concat(customers.first_name,' ',customers.last_name) AS customer
+                                    concat(customers.first_name,' ',customers.last_name) AS customer
 
-                    FROM orders, users AS customers
+                            FROM orders, users AS customers
 
-                    WHERE user_id = customers.id";
+                            WHERE user_id = customers.id";
         $all_orders = DB::select($query_all_orders);
         //$total_income = Sum($all_orders->orders.price);
         //dd($total_income);
