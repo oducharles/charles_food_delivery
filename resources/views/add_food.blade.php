@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('admin_index')
 @section('content')
 
 <div class="container">
@@ -158,10 +158,10 @@
 
             @endif
 
-            <div class="card">
+            <div class="card" >
                 <div class="card-header">{{ __('Current List of Foods') }}</div>
 
-                <table>
+                <table class="table table-striped table-bordered">
                     <thead>
                         <tr>
                             <td>Food Name</td>

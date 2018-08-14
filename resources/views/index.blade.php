@@ -33,9 +33,6 @@
 				</div>
 			</div>
 		</div>
-		@if (Auth::check())
-			<a href="/my_reciept"><div class="card-header">{{ ('View my Reciept') }}</div></a>
-		@endif
 	</div>
 </div>
 @endsection

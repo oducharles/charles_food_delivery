@@ -1,247 +1,127 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!doctype html>
+<html class="no-js" lang="zxx">
+
 <head>
-	<meta charset="utf-8">
-	<title>Personal</title>
-	<meta name="description" content="">
-	<!-- Mobile Specific Meta -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-	<!-- <link rel="shortcut icon" href="img/favicon.png"> -->
-	
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet'>
-	
-	<!-- Syntax Highlighter -->
-	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shCore.css" media="all">
-	<link rel="stylesheet" type="text/css" href="syntax-highlighter/styles/shThemeDefault.css" media="all">
-	
-	<!-- Font Awesome CSS-->
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<!-- Normalize/Reset CSS-->
-	<link rel="stylesheet" href="css/normalize.min.css">
-	<!-- Main CSS-->
-	<link rel="stylesheet" href="css/main.css">
-	
+    <meta charset="utf-8">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>Home</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <!-- Plugin-CSS -->
+    <link rel="stylesheet" href="{{ asset('admin/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/themify-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin/css/animate.css') }}">
+    <!-- Main-Stylesheets -->
+    <link rel="stylesheet" href="{{ asset('admin/css/normalize.css') }}">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ asset('admin/css/responsive.css') }}">
+    <script src="{{ asset('admin/js/vendor/modernizr-2.8.3.min.js') }}"></script>
+
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 
-<body id="welcome">
-	
-	<aside class="left-sidebar">
-		<div class="logo">
-			<a href="#welcome">
-				<img src="img/logo.png" alt="">
-			</a>
-		</div>
-		<nav class="left-nav">
-			<ul id="nav">
-				<li class="current"><a href="#welcome">Welcome</a></li>
-				<li><a href="#installation">Installation</a></li>
-				<li><a href="#tmpl-structure">Structure</a></li>
-				<li><a href="#css-structure">CSS Files</a></li>
-				<li><a href="#javascript">JavaScript Libraries</a></li>
-				<li><a href="#contact-form">Contact Form</a></li>
-				<li><a href="#subscription-form">Subscription Form</a></li>
-				<li><a href="#video">Video Tutorial</a></li>
-				<li><a href="#credit">Source and Credit</a></li>
-			</ul>
-		</nav>
-	</aside>
-	
-	<div id="main-wrapper">
-		<div class="main-content">
-			<section id="welcome">
-				<div class="content-header">
-					<h1>Personal Html5 Responsive Template</h1>
-				</div>
-				<div class="welcome">
-					
-					<h2 class="twenty">Welcome To Personal Html5 Responsive Template</h2>
-					<p>Firstly, a huge thanks for purchasing this theme, your support is truly appreciated!</p>
-					<p>This document covers the installation and use of this theme and often reveals answers to common problems and issues - read this document thoroughly if you are experiencing any difficulties. If you have any questions that are beyond the scope of this document, feel free to email at <code><a href="mailto:support@colorlib.com">support@colorlib.com</a></code> Thank you so much!</p>
-				</div>
-				
-				<div class="features">
-					<h2 class="twenty">Template Features</h2>
-					
-					<ul>
-						<li>Clean &amp; Simple Design</li>
-						<li>HTML5 &amp; CSS3</li>
-						<li>Fully Responsive Design</li>
-						<li>PHP/Ajax Powered Working Contact Form</li>
-						<li>All files are well commented</li>
-						<li>Cross Browser Compatible with IE11+, Firefox, Safari, Opera, Chrome</li>
-						<li>Extensive Documentation</li>
-					</ul>
-				</div>
-			</section>
-			
-			<section id="installation">
-				<div class="content-header">
-					<h1>Personal Html5 Responsive Template</h1>
-				</div>
-				<h2 class="title">Installing Template.</h2>
-				
-				<div class="section-content">
-					<ol>
-						<li>After unzip the download pack, you'll found a Template Folder with all the files.</li>
-						<li>You can view this Template in any browser, you can display or edit the Template without an internet connection.(May not wotrk fonts and google map).</li>
-						<li>The only section that will not work is the Contact Section which contains PHP code and requires a server environment for send messages.</li>
-						<li>Now go to your cpanel or open your FTP Client (like <a target="_blank" href="https://filezilla-project.org/download.php">Filezilla</a>) and upload the content of the Template on your server root.</li>
-						<li>Once the files are done uploading go to www.yourdomainname.com/index.html</li>
-					</ol>
-				</div>
-				
-			</section>
-			<section id="tmpl-structure">
-				<h2 class="title">Template Structure</h2>
-				<p class="fifteen">All information within the main content area is nested within a body tag. The general template structure is pretty the same throughout the template. Here is the general structure of main page (index.html).</p>
-				            <pre class="brush: html">
-					                <header class="site-header">
-						                
-					                </header>
-					                <main class="site-main">
-						                <section class="section">
-							                
-						                </section>
-						                <section class="section">
-							                
-						                </section>
-						                <section class="section">
-							                
-						                </section>
-					                </main>
-					                <footer class="site-footer">
-						                
-					                </footer>
-				</pre>
-			</section>
-			<section id="css-structure">
-				<h2 class="title">CSS Files and Structure</h2>
-				<p class="fifteen">These are the css files that are loaded into templates in <strong>Head Section</strong>.</p>
-				            <pre class="brush: html">
-					<!--
-					CSS
-					============================================= -->
-					<link rel="stylesheet" href="css/linearicons.css">
-					<link rel="stylesheet" href="css/owl.carousel.css">
-					<link rel="stylesheet" href="css/font-awesome.min.css">
-					<link rel="stylesheet" href="css/nice-select.css">
-					<link rel="stylesheet" href="css/magnific-popup.css">
-					<link rel="stylesheet" href="css/bootstrap.css">
-					<link rel="stylesheet" href="css/main.css">
-				</pre>
-				
-				<h2 class="title">Google Web Fonts</h2>
-				
-				<p>By default, the template loads this font from Google Web Font Services, you can change the font with the one that suits you best.</p>
-				
-				            <pre class="brush:html">                
-					<!--
-					Google Font
-					=========================== -->
-					                <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600" rel="stylesheet"> 
-				</pre>
-				
-				<p class="twenty">Remember to change the font into <strong>main.css</strong></p>
-			</section>
-			
-			<section id="javascript">
-				<h2 class="title">Javascript Files and Structure</h2>
-				
-				<p class="fifteen">These are the list of Javascript files that are loaded into templates in end of the <strong>Body Section</strong>.
-					
-					            <pre class="brush: html">
-						<!--
-						JavaScripts
-						========================== -->
-						<script src="js/vendor/jquery-2.2.4.min.js"></script>
-						<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-						<script src="js/vendor/bootstrap.min.js"></script>
-						<script src="js/jquery.ajaxchimp.min.js"></script>
-						<script src="js/owl.carousel.min.js"></script>
-						<script src="js/jquery.nice-select.min.js"></script>
-						<script src="js/jquery.magnific-popup.min.js"></script>
-						<script src="js/main.js"></script>
-					</pre>
-				</section>
-				
-				<section id="contact-form">
-					<h2 class="title"> Contact Form </h2>
-					<p>This is a PHP Script for sending messages to your email, you should replace <strong>support@colorlib.com</strong> to your email to start receive messages.</p>
-					            <pre class="brush:php">
-						                    $to = 'demo@site.com'; // replace this mail with yours
-						    $firstname = $_POST["fname"];
-						    $email= $_POST["email"];
-						    $headers = 'MIME-Version: 1.0' . "\r\n";
-						    $headers .= "From: " . $email . "\r\n"; // Sender's E-mail
-						    $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-						    $message ='<table style="width:100%">
-							        <tr>
-								            <td>'.$firstname.'  '.$laststname.'</td>
-							        </tr>
-							        <tr><td>Email: '.$email.'</td></tr>
-						    </table>';
-						    if (@mail($to, $email, $message, $headers))
-						    {
-						        echo 'The message has been sent.';
-						    }else{
-						        echo 'failed';
-						    }
-					</pre>
-				</section>
-				<section id="subscription-form">
-					<h2 class="title"> Subscription Form </h2>
-					<p>Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".</p>
-					            <pre class="brush: javascript">
-						        <div id="mc_embed_signup">
-							        //Replace this action with your own mailchimp post URL. Don't remove the "". Just paste the url inside "".
-						        <form target="_blank" novalidate action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&id=92a4423d01" method="get" class="subscription relative d-flex justify-content-center"></form>
-					        </div>
-				</pre>
-			</section>
-			<section id="video">
-				<h2 class="title"> Video Tutorial </h2>
-				<!-- 21:9 aspect ratio -->
-				<div class="embed-responsive embed-responsive-21by9">
-					<iframe class="embed-responsive-item" width="100%" height="515" src="https://www.youtube.com/embed/i7_PRPLOxVE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</section>
-			<section id="credit">
-				<h2 class="title">Source and Credit</h2>
-				<div class="script-source">
-					<ul>
-						<li><a target="_blank" href="http://www.pexels.com">Pexels</a></li>
-						<li><a target="_blank" href="http://jquery.com/">jQuery</a></li>
-						<li><a target="_blank" href="http://getbootstrap.com">Bootstrap Framework</a></li>
-						<li><a target="_blank" href="http://www.owlgraphic.com/owlcarousel">Owl Carousel</a></li>
-						<li><a target="_blank" href="https://github.com/iamMonzurul/jQuery-AJAX-MailChimp">Ajax Mailchimp</a></li>
-						<li><a target="_blank" href="http://fontawesome.io/">FontAwesome</a></li>
-						<li><a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">Magnefic Pop Up</a></li>
-						<li><a target="_blank" href="http://hernansartorio.com/jquery-nice-select/">Nice Select</a></li>
-						<li><a target="_blank" href="https://linearicons.com/">Linear Icons</a></li>
-					</ul>
-				</div>
-			</section>
-		</div>
-	</div>
-	
-	
-	<!-- Essential JavaScript Libraries
-	==============================================-->
-	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nav.js"></script>
-	<script type="text/javascript" src="syntax-highlighter/scripts/shCore.js"></script>
-	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushXml.js"></script>
-	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushCss.js"></script>
-	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushJScript.js"></script>
-	<script type="text/javascript" src="syntax-highlighter/scripts/shBrushPhp.js"></script>
-	<script type="text/javascript">
-	SyntaxHighlighter.all()
-	</script>
-	<script type="text/javascript" src="js/custom.js"></script>
-	
+<body data-spy="scroll" data-target="#primary-menu">
+
+    <div class="preloader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand logo">
+                    <h2>My Foods Admin</h2>
+                </a>
+            </div>
+            <!--Logo/-->
+            <nav class="collapse navbar-collapse" id="primary-menu">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/admin_home">{{__('Home') }}</a></li>
+                    <li><a href="/stored_food">{{ __('Register Foods') }}</a></li>
+                    <li><a href="/view_all_orders">{{ __('View All Orders') }}</a></li>
+                    <li><a href="/verify">{{ __('Verify Orders') }}</a></li>
+
+                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->first_name }} <span class="caret"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{ route('logout') }}"
+                           onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
+
+    <!--Header-area-->
+    <div class="header-area relative overlay" id="home-page"><!--full-height relative overlay full-height v-center--> 
+        <div class="absolute anlge-bg"></div>
+        <main class="py-4">
+            @yield('content')
+        </main>
+    </div>
+    <!--Header-area/-->
+
+
+    <!--Vendor-JS-->
+    <script src="{{ asset('admin/js/vendor/jquery-1.12.4.min.js') }}"></script>
+    <script src="{{ asset('admin/js/vendor/bootstrap.min.js') }}"></script>
+    <!--Plugin-JS-->
+    <script src="{{ asset('admin/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('admin/js/contact-form.js') }}"></script>
+    <script src="{{ asset('admin/js/jquery.parallax-1.1.3.js') }}"></script>
+    <script src="{{ asset('admin/js/scrollUp.min.js') }}"></script>
+    <script src="{{ asset('admin/js/magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('admin/js/wow.min.js') }}"></script>
+    <!--Main-active-JS-->
+    <script src="{{ asset('admin/js/main.js') }}"></script>
+
+    <script src="{{ URL::asset('../all_jquery/jquery-3.3.1.js') }}"></script>
+    <script>
+
+        $(function() {
+
+            $('.deletefood').on('submit', function(){
+            if (confirm("Are you sure you want to delete this food?")){
+                return true;
+            } else {
+                return false;
+            }
+        });
+
+        });
+    </script>
 </body>
+
 </html>

@@ -55,18 +55,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ url('/') }}">{{ __('Home') }}</a>
                                 </li>
-<!-- 
                                 <li class="nav-item">
-                                    <a class="nav-link" href="/stored_food">{{ __('Register Foods') }}</a>
+                                    <a class="nav-link" href="{{ url('/my_reciept') }}">{{ __('View my Reciept') }}</a>
                                 </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="">{{ __('View All Orders') }}</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/verify">{{ __('Verify Orders') }}</a>
-                                </li> -->
 
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->first_name }} <span class="caret"></span>

@@ -16,9 +16,14 @@ Route::get('/', function (){
 }); //index page
 
 //verify orders by deliveryman
-Route::get('/admin', function (){
-return view('admin_index');
+Route::get('/verify', function (){
+return view('verify_order');
 });
+
+Route::get('/admin_home', function (){
+return view('admin_home');
+});
+
 
 //strat of radio button and checkboxes exercises
 Route::get('/radio', function () {
@@ -67,5 +72,9 @@ Route::get('/edit_food/{id}', 'AdminController@edit_food_detail')->name('edit_fo
 Route::post('/store_food_update/{id}', 'AdminController@update_food_details')->name('store_food_update');
 
 Route::post('/delete_food/{id}', 'AdminController@delete_food')->name('delete_food');
+
+Route::post('/view_all_orders', 'AdminController@view_all_orders')->name('view_all_orders');
+
+Route::get('/view_all_orders', 'AdminController@view_all_orders')->name('view_all_orders');
 
 
