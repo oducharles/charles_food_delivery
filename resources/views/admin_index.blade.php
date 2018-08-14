@@ -33,16 +33,16 @@
 
 <body data-spy="scroll" data-target="#primary-menu">
 
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="sk-folding-cube">
             <div class="sk-cube1 sk-cube"></div>
             <div class="sk-cube2 sk-cube"></div>
             <div class="sk-cube4 sk-cube"></div>
             <div class="sk-cube3 sk-cube"></div>
         </div>
-    </div>
+    </div> -->
     <!--Mainmenu-area-->
-    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+    <div class="mainmenu-area" data-spy="affix"> <!-- data-offset-top="100" -->
         <div class="container">
             <!--Logo-->
             <div class="navbar-header">
@@ -63,7 +63,7 @@
                     <li><a href="/view_all_orders">{{ __('View All Orders') }}</a></li>
                     <li><a href="/verify">{{ __('Verify Orders') }}</a></li>
 
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <li><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->first_name }} <span class="caret"></span>
                     </a>
 
@@ -78,6 +78,7 @@
                             @csrf
                         </form>
                     </div>
+                	</li>
                 </ul>
             </nav>
         </div>
@@ -85,13 +86,25 @@
     <!--Mainmenu-area/-->
 
     <!--Header-area-->
-    <header class="header-area relative overlay" id="home-page"><!--relative overlay full-height v-center--> 
-        <div class="absolute anlge-bg"></div>
-        <main class="py-4" style="text-align: center;">
+    <!-- <header class="header-area relative overlay" id="home-page">relative overlay full-height v-center 
+        <div class="absolute anlge-bg"></div> -->
+        <!-- <main class="py-4" style="text-align: center;">
             @yield('content')
-        </main>
-    </header>
+        </main> -->
+    <!-- </header> -->
     <!--Header-area/-->
+
+        <!--Feature-area-->
+    <section class="gray-bg section-padding" id="service-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                        @yield('content')
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Feature-area/-->
 
 
     <!--Vendor-JS-->
