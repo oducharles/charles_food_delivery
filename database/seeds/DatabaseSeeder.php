@@ -4,7 +4,6 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
 use FakerRestaurant\Provider\en_US\Restaurant;
-use App\Ordercategory;
 
 class DatabaseSeeder extends Seeder
 {
