@@ -87,6 +87,8 @@
     <!--Feature-area/-->
 
 
+
+    <script src="{{ URL::asset('../all_jquery/jquery-3.3.1.js') }}"></script>
     <!--Vendor-JS-->
     <script src="{{ asset('admin/js/vendor/jquery-1.12.4.min.js') }}"></script>
     <script src="{{ asset('admin/js/vendor/bootstrap.min.js') }}"></script>
@@ -100,7 +102,6 @@
     <!--Main-active-JS-->
     <script src="{{ asset('admin/js/main.js') }}"></script>
 
-    <script src="{{ URL::asset('../all_jquery/jquery-3.3.1.js') }}"></script>
     <script>
 
         $(function() {
