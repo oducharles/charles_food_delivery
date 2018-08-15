@@ -1,0 +1,1358 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pa",
+				"padding-bottom\tproperty"
+			],
+			[
+				"padd",
+				"padding-bottom\tproperty"
+			],
+			[
+				"pad",
+				"padding-top\tproperty"
+			],
+			[
+				"re",
+				"readonly\tAttr"
+			],
+			[
+				"bg",
+				"background-color\tproperty"
+			],
+			[
+				"li",
+				"li\tTag"
+			],
+			[
+				"op",
+				"optgroup\tTag"
+			],
+			[
+				"luc",
+				"lunch_time"
+			],
+			[
+				"foo",
+				"food_photo"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"vi",
+				"view"
+			],
+			[
+				"verify",
+				"verify_order"
+			],
+			[
+				"loca",
+				"local_food_name"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"ver",
+				"verify_order"
+			],
+			[
+				"ali",
+				"text-align\tproperty"
+			],
+			[
+				"get",
+				"GET"
+			],
+			[
+				"local",
+				"localfood"
+			],
+			[
+				"const",
+				"constructor"
+			],
+			[
+				"for",
+				"form\tTag"
+			],
+			[
+				"save",
+				"save_food"
+			],
+			[
+				"food",
+				"food_name"
+			],
+			[
+				"aut",
+				"autofocus\tAttr"
+			],
+			[
+				"order",
+				"order_user"
+			],
+			[
+				"Order",
+				"ordercategorgies"
+			],
+			[
+				"orde",
+				"order_user"
+			],
+			[
+				"ret",
+				"retrieve_order"
+			],
+			[
+				"deli",
+				"delivery_status"
+			],
+			[
+				"ord",
+				"order"
+			],
+			[
+				"rece",
+				"reciept_number_to_verify"
+			],
+			[
+				"getre",
+				"get_receipt"
+			],
+			[
+				"hol",
+				"hold_retrieved_reciept_number"
+			],
+			[
+				"recei",
+				"reciept_number"
+			],
+			[
+				"deliver",
+				"delivered"
+			],
+			[
+				"ch",
+				"change_statuses"
+			],
+			[
+				"reciept",
+				"reciept_number"
+			],
+			[
+				"se",
+				"select_all"
+			],
+			[
+				"fo",
+				"for\tAttr"
+			],
+			[
+				"f",
+				"f\tAnonymous Function"
+			],
+			[
+				"paid",
+				"PaidOrderController"
+			],
+			[
+				"ad",
+				"address"
+			],
+			[
+				"ho",
+				"hold_my_food"
+			],
+			[
+				"expe",
+				"expected_by"
+			],
+			[
+				"lo",
+				"local_food_name"
+			],
+			[
+				"phon",
+				"phone-confirm"
+			],
+			[
+				"my",
+				"my_info"
+			],
+			[
+				"us",
+				"username"
+			],
+			[
+				"req",
+				"request"
+			],
+			[
+				"expect",
+				"expected_time"
+			],
+			[
+				"exp",
+				"expected_time"
+			],
+			[
+				"su",
+				"supper_time"
+			],
+			[
+				"vege",
+				"vegetarian_menu"
+			],
+			[
+				"in",
+				"input\tTag"
+			],
+			[
+				"en",
+				"enum"
+			],
+			[
+				"ve",
+				"vegetarian_menu"
+			],
+			[
+				"if",
+				"if\tif"
+			],
+			[
+				"furn",
+				"furn_price"
+			],
+			[
+				"fur",
+				"furn_make"
+			],
+			[
+				"fu",
+				"furn_price"
+			],
+			[
+				"add",
+				"add_furniture"
+			],
+			[
+				"furn_",
+				"furn_name"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"edit",
+				"edit_data_row"
+			],
+			[
+				"edi",
+				"edit_data_row"
+			],
+			[
+				"r",
+				"rIndex"
+			],
+			[
+				"pro",
+				"prototype"
+			],
+			[
+				"record",
+				"record_form"
+			],
+			[
+				"tr",
+				"trysub"
+			],
+			[
+				"contact",
+				"ContactsController"
+			],
+			[
+				"d",
+				"document"
+			],
+			[
+				"reci",
+				"reciever_user_id"
+			],
+			[
+				"sender",
+				"sender_user_id"
+			],
+			[
+				"is",
+				"isblocked"
+			],
+			[
+				"blocked",
+				"blocked_user"
+			],
+			[
+				"customer",
+				"customers_contactlist"
+			],
+			[
+				"bloc",
+				"blocked_user"
+			],
+			[
+				"account",
+				"account_name"
+			],
+			[
+				"o",
+				"option\tTag"
+			],
+			[
+				"fun",
+				"fun\tfunction …"
+			],
+			[
+				"phone",
+				"phonenumber"
+			],
+			[
+				"FET",
+				"fetch_rejected_client"
+			],
+			[
+				"Con",
+				"Contact"
+			],
+			[
+				"resi",
+				"residence_reject"
+			],
+			[
+				"client",
+				"client_name"
+			],
+			[
+				"clien",
+				"client_contact"
+			],
+			[
+				"clie",
+				"client_name"
+			],
+			[
+				"sub",
+				"subCat"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"sel",
+				"selectedTerm"
+			],
+			[
+				"pr",
+				"product_list"
+			],
+			[
+				"pqu",
+				"pquantity"
+			],
+			[
+				"push",
+				"pushproduct"
+			],
+			[
+				"to",
+				"total"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"produ",
+				"productqty"
+			],
+			[
+				"product",
+				"productcost"
+			],
+			[
+				"pnma",
+				"pname"
+			],
+			[
+				"qTY",
+				"qty_p"
+			],
+			[
+				"dele",
+				"deleteproduct"
+			],
+			[
+				"i",
+				"if\tif"
+			],
+			[
+				"nam",
+				"namep"
+			],
+			[
+				"p_",
+				"p_data"
+			],
+			[
+				"p",
+				"p_id"
+			],
+			[
+				"pname",
+				"pname"
+			],
+			[
+				"del",
+				"deleteproduct"
+			],
+			[
+				"pcost",
+				"pcost"
+			],
+			[
+				"pq",
+				"pquantity"
+			],
+			[
+				"co",
+				"content\tproperty"
+			],
+			[
+				"al",
+				"text-align\tproperty"
+			],
+			[
+				"AU",
+				"Auth"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"A",
+				"Auth"
+			],
+			[
+				"path",
+				"storage_path"
+			],
+			[
+				"file",
+				"filedown"
+			],
+			[
+				"align",
+				"align-content\tproperty"
+			],
+			[
+				"success",
+				"successfully"
+			],
+			[
+				"text-de",
+				"text-decoration\tproperty"
+			],
+			[
+				"te",
+				"text-decoration-style\tproperty"
+			],
+			[
+				"back",
+				"background\tproperty"
+			],
+			[
+				"bor",
+				"border-radius\tproperty"
+			],
+			[
+				"border-bot",
+				"border-bottom-color\tproperty"
+			],
+			[
+				"text",
+				"text-align\tproperty"
+			],
+			[
+				"bac",
+				"background-color\tproperty"
+			],
+			[
+				"mar",
+				"margin\tproperty"
+			],
+			[
+				"font-s",
+				"font-size\tproperty"
+			],
+			[
+				"wi",
+				"width\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": ".env",
+			"settings":
+			{
+				"buffer_size": 695,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "database/.gitignore",
+			"settings":
+			{
+				"buffer_size": 9,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 139,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"comme",
+				"Toggle Block Comment"
+			],
+			[
+				"comm",
+				"Toggle Comment"
+			],
+			[
+				"com",
+				"Toggle Comment"
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/charles_food_delivery"
+	],
+	"file_history":
+	[
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/cargoplus_transportation_sys/app/User.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/admin_index.blade.php",
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/cargoplus_transportation_sys/.env",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/reciept.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/order_food.blade.php",
+		"/C/wamp64/apps/phpmyadmin4.7.9/config.inc.php",
+		"/C/wamp64/apps/phpmyadmin4.7.9/user_password.php",
+		"/C/wamp64/apps/phpmyadmin4.7.9/phpinfo.php",
+		"/C/wamp64/apps/phpmyadmin4.7.9/db_import.php",
+		"/C/wamp64/bin/apache/apache2.4.33/bin/php.ini",
+		"/C/wamp64/bin/mysql/mysql5.7.21/my.ini",
+		"/C/wamp64/logs/php_error.log",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/index.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/PaidOrderController.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/AdminController.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/verify_order.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/admin_home.blade.php",
+		"/C/Users/Odur Charles Lwanga/Downloads/Compressed/colid-colorlib/colid-colorlib/index.html",
+		"/C/Users/Odur Charles Lwanga/Downloads/Compressed/colid-colorlib/colid-colorlib/process.php",
+		"/C/Users/Odur Charles Lwanga/Downloads/Compressed/shapely.1.2.3/shapely/index.php",
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/composer-setup.php",
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/info.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/make_payment.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/routes/web.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/layouts/app.blade.php",
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/admin_index.php",
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/charles_food_delivery/public/index.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/add_food.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/OrdersController.php",
+		"/C/Users/Odur Charles Lwanga/cmder/ubuntu_data/testing.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_17_120847_create_orders_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/HomeController.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/home.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/User.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/Auth/LoginController.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/auth/login.blade.php",
+		"/C/Users/Odur Charles Lwanga/Downloads/Compressed/personal/personal/Personal - Doc/index.html",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/welcome.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/seeds/DatabaseSeeder.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/app.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/order_reciept.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/localfood.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_23_063204_drop_ordercategorgies_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/config/database.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/.env",
+		"/C/wamp64/www/testmysql.php",
+		"/C/Users/Odur Charles Lwanga/Desktop/mysql-init.txt",
+		"/C/wamp64/scripts/config.inc.php",
+		"/C/wamp64/apps/phpmyadmin4.7.9/examples/signon.php",
+		"/E/www Kept/FINAL/R-A/.htaccess",
+		"/C/wamp64/logs/mysql.log",
+		"/C/wamp64/bin/apache/apache2.4.33/conf/httpd.conf",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_21_203102_modify_orders_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_21_123001_modify_foods_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/composer.json",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/config/app.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Ordercategory.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/auth/register.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Orders.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/faker.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/radio_checkbox.blade.php",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/OduCharles_CRUD_using_Javascript/radio_checkbox.html",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/verify_order.blade.php",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/OduCharles_CRUD_using_Javascript/charles_CRUD_javascript.html",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/new_radio_checkbox.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/seeds/FoodsTableSeeder.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_18_181835_modify_users_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RedirectsUsers.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/AuthenticatesUsers.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/vendor/laravel/framework/src/Illuminate/Auth/Events/Login.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/vendor/laravel/framework/src/Illuminate/Foundation/Auth/RegistersUsers.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_17_120628_create_ordercategorgies_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/welcomes.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/registerr.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/resources/views/loginn.blade.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Order.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Food.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_17_114813_create_foods_table.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/app/Providers/AppServiceProvider.php",
+		"/C/Users/Odur Charles Lwanga/charles_food_delivery/database/migrations/2018_07_17_115057_create_orders_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/2018_07_16_014157_create_furnitures_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/home.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/app/Http/Controllers/HomeController.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/auth/register.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/layouts/app.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/welcome.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/app/Http/Controllers/Auth/RegisterController.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/app/Http/Controllers/Auth/LoginController.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/composer.json",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/app/Providers/AppServiceProvider.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/app/User.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/app/Furniture.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/mymigrations/2018_07_16_005841_create_furnitures_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/mymigrations/2018_07_16_004817_create_furnitures_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/2014_10_12_000000_create_users_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/2014_10_12_100000_create_password_resets_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/2018_07_14_171909_create_books_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/mymigrations/2018_07_15_184312_create_furnitures_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/mymigrations/2018_07_15_181247_create_furnitures_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/MyBasics/add_furniture.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/mymigrations/2018_07_15_071732_create_furniture_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/database/migrations/2018_07_14_112748_furniture_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/auth/login.blade.php",
+		"/C/wamp64/www/test_sockets.php",
+		"/C/wamp64/www/index.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/resources/views/MyBasics/Add_data.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/config/database.php",
+		"/C/Users/Odur Charles Lwanga/Laravel_Basics/.env",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/charles_CRUD_javascript.html",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/crud_checkout.js",
+		"/C/Users/Odur Charles Lwanga/Desktop/Update/index.php",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/checkout.html",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/productLine.js",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/product_line.js",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/resources/views/admin_index.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/app/Http/Controllers/ContactsController.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/resources/views/customers.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/app/Http/Controllers/HomeController.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/routes/web.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/resources/views/accounts_details.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/resources/views/customer_contactlist.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/resources/views/layouts/app.blade.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/app/Http/Controllers/TransactionsController.php",
+		"/C/Users/Odur Charles Lwanga/Desktop/Product_line/work.html",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/database/migrations/2018_07_03_161159_create_transactions_table.php",
+		"/C/Users/Odur Charles Lwanga/Laravel-CRUD-app/charles_jovan_merge/database/migrations/2018_07_12_200618_edit_transaction_table.php"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": ".env",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "database/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 139,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "food.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"use",
+				"app\\User.php"
+			],
+			[
+				"U",
+				"app\\User.php"
+			],
+			[
+				"Home",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"web",
+				"routes\\web.php"
+			],
+			[
+				"login",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"order",
+				"resources\\views\\order_food.blade.php"
+			],
+			[
+				"ord",
+				"resources\\views\\order_food.blade.php"
+			],
+			[
+				"admin",
+				"app\\Http\\Controllers\\AdminController.php"
+			],
+			[
+				"add_f",
+				"resources\\views\\add_food.blade.php"
+			],
+			[
+				"inde",
+				"resources\\views\\index.blade.php"
+			],
+			[
+				"veri",
+				"resources\\views\\verify_order.blade.php"
+			],
+			[
+				"app.",
+				"resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"pai",
+				"app\\Http\\Controllers\\PaidOrderController.php"
+			],
+			[
+				"Adm",
+				"app\\Http\\Controllers\\AdminController.php"
+			],
+			[
+				"add",
+				"resources\\views\\add_food.blade.php"
+			],
+			[
+				"index",
+				"resources\\views\\index.blade.php"
+			],
+			[
+				"ordersc",
+				"app\\Http\\Controllers\\OrdersController.php"
+			],
+			[
+				"adm",
+				"app\\Http\\Controllers\\AdminController.php"
+			],
+			[
+				"add_foo",
+				"resources\\views\\add_food.blade.php"
+			],
+			[
+				"authcont",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"home",
+				"resources\\views\\home.blade.php"
+			],
+			[
+				"welcome",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"homeco",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"app",
+				"resources\\views\\app.blade.php"
+			],
+			[
+				"reciept",
+				"resources\\views\\reciept.blade.php"
+			],
+			[
+				"order_re",
+				"resources\\views\\order_reciept.blade.php"
+			],
+			[
+				"make",
+				"resources\\views\\make_payment.blade.php"
+			],
+			[
+				"user",
+				"app\\User.php"
+			],
+			[
+				"paid",
+				"app\\Http\\Controllers\\PaidOrderController.php"
+			],
+			[
+				"orders",
+				"app\\Http\\Controllers\\OrdersController.php"
+			],
+			[
+				"mak",
+				"resources\\views\\make_payment.blade.php"
+			],
+			[
+				"local",
+				"resources\\views\\localfood.blade.php"
+			],
+			[
+				"m",
+				"resources\\views\\make_payment.blade.php"
+			],
+			[
+				"loca",
+				"resources\\views\\localfood.blade.php"
+			],
+			[
+				"verify",
+				"resources\\views\\verify_order.blade.php"
+			],
+			[
+				"ind",
+				"resources\\views\\index.blade.php"
+			],
+			[
+				"order_rec",
+				"resources\\views\\order_reciept.blade.php"
+			],
+			[
+				"recie",
+				"resources\\views\\reciept.blade.php"
+			],
+			[
+				"data",
+				"config\\database.php"
+			],
+			[
+				"loginco",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"add_",
+				"resources\\views\\add_food.blade.php"
+			],
+			[
+				"config/app",
+				"config\\app.php"
+			],
+			[
+				"composer",
+				"composer.json"
+			],
+			[
+				"regi",
+				"resources\\views\\auth\\register.blade.php"
+			],
+			[
+				"register",
+				"resources\\views\\auth\\register.blade.php"
+			],
+			[
+				"logi",
+				"resources\\views\\auth\\login.blade.php"
+			],
+			[
+				"in",
+				"resources\\views\\index.blade.php"
+			],
+			[
+				"reci",
+				"resources\\views\\reciept.blade.php"
+			],
+			[
+				"w",
+				"routes\\web.php"
+			],
+			[
+				"receiptbla",
+				"resources\\views\\reciept.blade.php"
+			],
+			[
+				"ver",
+				"resources\\views\\verify_order.blade.php"
+			],
+			[
+				"we",
+				"routes\\web.php"
+			],
+			[
+				"ho",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"new",
+				"resources\\views\\new_radio_checkbox.blade.php"
+			],
+			[
+				"radi",
+				"resources\\views\\radio_checkbox.blade.php"
+			],
+			[
+				"rad",
+				"resources\\views\\radio_checkbox.blade.php"
+			],
+			[
+				"ra",
+				"resources\\views\\radio_checkbox.blade.php"
+			],
+			[
+				"app.bl",
+				"resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"compo",
+				"composer.json"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"reg",
+				"resources\\views\\auth\\register.blade.php"
+			],
+			[
+				"make_",
+				"resources\\views\\make_payment.blade.php"
+			],
+			[
+				"regis",
+				"app\\Http\\Controllers\\Auth\\RegisterController.php"
+			],
+			[
+				"regist",
+				"resources\\views\\auth\\register.blade.php"
+			],
+			[
+				"homec",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"wel",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"AppServ",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"welc",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"lo",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"appSer",
+				"app\\Providers\\AppServiceProvider.php"
+			],
+			[
+				"da",
+				"config\\database.php"
+			],
+			[
+				"cust",
+				"resources\\views\\customers.blade.php"
+			],
+			[
+				"contact",
+				"app\\Http\\Controllers\\ContactsController.php"
+			],
+			[
+				"trans",
+				"app\\Http\\Controllers\\TransactionsController.php"
+			],
+			[
+				"accountc",
+				"app\\Http\\Controllers\\AccountsController.php"
+			],
+			[
+				"createac",
+				"resources\\views\\createaccount.blade.php"
+			],
+			[
+				"accounts",
+				"app\\Accounts.php"
+			],
+			[
+				"conta",
+				"app\\Http\\Controllers\\Contacts.php"
+			],
+			[
+				"co",
+				"app\\Http\\Controllers\\Contacts.php"
+			],
+			[
+				"hom",
+				"app\\Http\\Controllers\\HomeController.php"
+			],
+			[
+				"transa",
+				"app\\Http\\Controllers\\TransactionsController.php"
+			],
+			[
+				"contac",
+				"app\\Http\\Controllers\\Contacts.php"
+			],
+			[
+				"admin_",
+				"resources\\views\\admin_index.blade.php"
+			],
+			[
+				"customers_",
+				"resources\\views\\customer_contactlist.blade.php"
+			],
+			[
+				"authco",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"account",
+				"resources\\views\\createaccount.blade.php"
+			],
+			[
+				"accoun",
+				"resources\\views\\accounts_details.blade.php"
+			],
+			[
+				"custom",
+				"resources\\views\\customers.blade.php"
+			],
+			[
+				"customer",
+				"resources\\views\\customers.blade.php"
+			],
+			[
+				"prodco",
+				"app\\Http\\Controllers\\prodController.php"
+			],
+			[
+				"welco",
+				"resources\\views\\welcome.blade.php"
+			],
+			[
+				"admi",
+				"resources\\views\\admin_index.php"
+			],
+			[
+				"contacts",
+				"app\\Http\\Controllers\\Contacts.php"
+			],
+			[
+				"app.b",
+				"resources\\views\\layouts\\app.blade.php"
+			],
+			[
+				"contr",
+				"app\\Http\\Controllers\\Controller.php"
+			],
+			[
+				"auth",
+				"resources\\lang\\en\\auth.php"
+			],
+			[
+				"authen",
+				"vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Authenticatable.php"
+			],
+			[
+				"authcontroller",
+				"app\\Http\\Controllers\\Auth\\LoginController.php"
+			],
+			[
+				"route",
+				"vendor\\symfony\\routing\\Route.php"
+			],
+			[
+				"produ",
+				"app\\products.php"
+			],
+			[
+				"",
+				"app\\Http\\Controllers\\prodController.php"
+			],
+			[
+				"dat",
+				"config\\database.php"
+			],
+			[
+				".en",
+				".env"
+			],
+			[
+				"eve",
+				"vendor\\symfony\\event-dispatcher\\Event.php"
+			],
+			[
+				"rwe",
+				"routes\\web.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 300.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
