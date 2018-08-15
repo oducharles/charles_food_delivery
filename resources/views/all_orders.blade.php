@@ -7,7 +7,7 @@
 		    <div class="card" >
 		        <div class="card-header" align="center" style="font-size: 20px;">{{ __('List of all Orders') }}</div>
 
-		        <table class="table table-striped table-bordered">
+		        <table id="dtBasicExample" class="table table-striped table-bordered table-sm">
 		            <thead>
 		                <tr>
 		                    <th>Customer Name</th>

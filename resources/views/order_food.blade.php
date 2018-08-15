@@ -2,9 +2,9 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header"><h2>{{ __('Select Food of your interest') }}</h2></div>
+                <div class="card-header"><h3>{{ __('Select Food of your interest') }}</h3></div>
 
                 <div class="card-body">
                     <form method="GET" action="/make_payment">
@@ -29,7 +29,7 @@
                                 <div class="form-group row" id="local_food_price">
                                     <label for="price" class="col-md-4 col-form-label text-md-right">{{ __('Unit Price') }}</label>
                                     <div class="col-md-6">
-                                        <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" required autofocus>
+                                        <input id="price" type="number" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="price" readonly required autofocus>
                                         
                                     </div>
                                 </div><!--Price-->

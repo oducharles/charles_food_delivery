@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 @if(isset($edit_food))
-                <div class="card-header">{{ __('Edit Food Details') }}</div>
+                <div class="card-header" align="center" style="font-size: 20px;">{{ __('Edit Food Details') }}</div>
                 
                 <div class="card-body">
                     <form method="POST" enctype="multipart/form-data" action="{{ url('store_food_update',$id) }}" aria-label="{{ __('Make Payment') }}">
@@ -83,9 +83,9 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-14">
+        <div class="col-md-6">
             <div class="card" >
-                <div class="card-header">{{ __('Add Foods') }}</div>
+                <div class="card-header" align="center" style="font-size: 20px;">{{ __('Add Foods') }}</div>
 
                 <div class="card-body">
                     <form method="POST" enctype="multipart/form-data" action="/store_food" aria-label="{{ __('Make Payment') }}">
@@ -147,7 +147,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-success">
                                     {{ __('Add') }}
                                 </button>
                             </div>
@@ -155,21 +155,25 @@
                     </form>
                 </div>
             </div>
-
+        </div>
+    </div>
+</div>
             @endif
-
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-14">
             <div class="card" >
-                <div class="card-header">{{ __('Current List of Foods') }}</div>
+                <div class="card-header" align="center" style="font-size: 20px;">{{ __('Current List of Foods') }}</div>
 
-                <table class="table table-striped table-bordered">
+                <table id="dtBasicExample" class="table table-striped table-bordered table-sm">
                     <thead>
                         <tr>
-                            <td>Food Name</td>
-                            <td>Price</td>
-                            <td>Category</td>
-                            <td>Food Photo</td>
-                            <td>Edit</td>
-                            <td>Delete</td>
+                            <th>Food Name</th>
+                            <th>Price</th>
+                            <th>Category</th>
+                            <th>Food Photo</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -179,7 +183,7 @@
                             <td>{{ $food->food_name }}</td>
                             <td>{{ $food->price }}</td>
                             <td>{{ $food->category }}</td>
-                            <td><img src="{{$food->food_photo}}" height="auto" width="120px" style="border-radius: 5px;"></td>
+                            <td><img src="{{$food->food_photo}}" height="auto" width="100px" style="border-radius: 5px;"></td>
                             <td>
                                 <a href="{{url('edit_food',$food->id)}}">
                                     <input type="button" class="btn btn-primary" name="edit" value="Edit">

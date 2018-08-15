@@ -32,15 +32,6 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
-
-    <!-- <div class="preloader">
-        <div class="sk-folding-cube">
-            <div class="sk-cube1 sk-cube"></div>
-            <div class="sk-cube2 sk-cube"></div>
-            <div class="sk-cube4 sk-cube"></div>
-            <div class="sk-cube3 sk-cube"></div>
-        </div>
-    </div> -->
     <!--Mainmenu-area-->
     <div class="mainmenu-area" data-spy="affix"> <!-- data-offset-top="100" -->
         <div class="container">
@@ -63,21 +54,19 @@
                     <li><a href="/view_all_orders">{{ __('View All Orders') }}</a></li>
                     <li><a href="/verify">{{ __('Verify Orders') }}</a></li>
 
-                    <li><a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <li>
+                    	<a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->first_name }} <span class="caret"></span>
-                    </a>
+                    	</a>
 
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
+                    	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        	<a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            {{ __('Logout') }}</a>
 
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        	<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
-                        </form>
-                    </div>
+                        	</form>
+                    	</div>
                 	</li>
                 </ul>
             </nav>
@@ -85,20 +74,11 @@
     </div>
     <!--Mainmenu-area/-->
 
-    <!--Header-area-->
-    <!-- <header class="header-area relative overlay" id="home-page">relative overlay full-height v-center 
-        <div class="absolute anlge-bg"></div> -->
-        <!-- <main class="py-4" style="text-align: center;">
-            @yield('content')
-        </main> -->
-    <!-- </header> -->
-    <!--Header-area/-->
-
-        <!--Feature-area-->
+    <!--Feature-area-->
     <section class="gray-bg section-padding" id="service-page">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-4">
+                <div class="col-xs-12 col-sm-4 py-4">
                         @yield('content')
                 </div>
             </div>
@@ -111,12 +91,12 @@
     <script src="{{ asset('admin/js/vendor/jquery-1.12.4.min.js') }}"></script>
     <script src="{{ asset('admin/js/vendor/bootstrap.min.js') }}"></script>
     <!--Plugin-JS-->
-    <script src="{{ asset('admin/js/owl.carousel.min.js') }}"></script>
+    <!-- <script src="{{ asset('admin/js/owl.carousel.min.js') }}"></script>
     <script src="{{ asset('admin/js/contact-form.js') }}"></script>
     <script src="{{ asset('admin/js/jquery.parallax-1.1.3.js') }}"></script>
     <script src="{{ asset('admin/js/scrollUp.min.js') }}"></script>
     <script src="{{ asset('admin/js/magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('admin/js/wow.min.js') }}"></script>
+    <script src="{{ asset('admin/js/wow.min.js') }}"></script> -->
     <!--Main-active-JS-->
     <script src="{{ asset('admin/js/main.js') }}"></script>
 
@@ -126,13 +106,17 @@
         $(function() {
 
             $('.deletefood').on('submit', function(){
-            if (confirm("Are you sure you want to delete this food?")){
-                return true;
-            } else {
-                return false;
-            }
-        });
+	            if (confirm("Are you sure you want to delete this food?")){
+	                return true;
+	            } else {
+	                return false;
+	            }
+	        });
 
+			  $('#dtBasicExample').DataTable({
+			    "paging": false // false to disable pagination (or any other option)
+			  });
+			  $('.dataTables_length').addClass('bs-select');
         });
     </script>
 </body>
