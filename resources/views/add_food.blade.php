@@ -1,11 +1,11 @@
 @extends('admin_index')
 @section('content')
 
+@if(isset($edit_food))
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                @if(isset($edit_food))
                 <div class="card-header" align="center" style="font-size: 20px;">{{ __('Edit Food Details') }}</div>
                 
                 <div class="card-body">
@@ -75,12 +75,11 @@
                         </div>
                     </form>
                 </div>
-                @else
             </div>
         </div>
     </div>
 </div>
-
+@else
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-6">
@@ -158,7 +157,7 @@
         </div>
     </div>
 </div>
-            @endif
+@endif
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-14">
@@ -178,25 +177,25 @@
                     </thead>
                     <tbody>
                         @if(isset($foods))
-                        @foreach($foods as $food)
-                        <tr>
-                            <td>{{ $food->food_name }}</td>
-                            <td>{{ $food->price }}</td>
-                            <td>{{ $food->category }}</td>
-                            <td><img src="{{$food->food_photo}}" height="auto" width="100px" style="border-radius: 5px;"></td>
-                            <td>
-                                <a href="{{url('edit_food',$food->id)}}">
-                                    <input type="button" class="btn btn-primary" name="edit" value="Edit">
-                                </a>
-                            </td>
-                            <td>
-                                <form method="POST" action="{{ url('delete_food',$food->id) }}" class="deletefood">
-                                    @csrf
-                                    <input type="submit" class="btn btn-danger" name="submit" value="Delete">
-                                </form>
-                            </td>
-                        </tr>
-                        @endforeach
+                            @foreach($foods as $food)
+                                <tr>
+                                    <td>{{ $food->food_name }}</td>
+                                    <td>{{ $food->price }}</td>
+                                    <td>{{ $food->category }}</td>
+                                    <td><img src="{{$food->food_photo}}" height="auto" width="100px" style="border-radius: 5px;"></td>
+                                    <td>
+                                        <a href="{{url('edit_food',$food->id)}}">
+                                            <input type="button" class="btn btn-primary" name="edit" value="Edit">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <form method="POST" action="{{ url('delete_food',$food->id) }}" class="deletefood">
+                                            @csrf
+                                            <input type="submit" class="btn btn-danger" name="submit" value="Delete">
+                                        </form>
+                                    </td>
+                                </tr>
+                            @endforeach
                         @endif
                     </tbody>
                 </table>
@@ -204,4 +203,5 @@
         </div>
     </div>
 </div>
+
 @endsection

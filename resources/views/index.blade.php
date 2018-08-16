@@ -10,7 +10,7 @@
 					<div class="card-group" id="local_food_name">
                         <div class="card">
                         	<a href="/localfood">
-                            	<img class="card-img-top" src="storage/local_food_pic.jpg" style="height: 170px !important; padding: 2px; border-radius: 5px;" alt="Card image cap">
+                            	<img class="card-img-top" src="local_food_pic.jpg" style="height: 170px !important; padding: 2px; border-radius: 5px;" alt="Card image cap">
 	                            <div class="card-body">
 	                                <h5 class="card-title">Local Foods</h5>
 	                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -21,7 +21,7 @@
 
                         <div class="card">
                             <a href="/take_away">
-                                <img class="card-img-top" src="storage/take_away_pic.jpg" style="height: 170px !important; padding: 2px; border-radius: 5px;" alt="Card image cap">
+                                <img class="card-img-top" src="take_away_pic.jpg" style="height: 170px !important; padding: 2px; border-radius: 5px;" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Take Away</h5>
                                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
