@@ -43,9 +43,14 @@ return [
 
     'disks' => [
 
-        'local' => [
+        #'local' => [
+        #    'driver' => 'local',
+        #    'root' => storage_path('app'),
+        #],
+
+	'local' => [
             'driver' => 'local',
-            'root' => storage_path('app'),
+            'root' => public_path('foods_photos'),
         ],
 
         'public' => [
@@ -54,6 +59,12 @@ return [
             'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
+	'uploads' => [
+            'driver' => 'local',
+            'root'   => public_path(), ## . '/foods_photos',
+            'url' => env('APP_URL').'/foods_photos',
+            'visibility' => 'public',
+    	],
 
         's3' => [
             'driver' => 's3',

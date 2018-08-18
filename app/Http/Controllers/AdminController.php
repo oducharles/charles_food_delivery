@@ -25,8 +25,9 @@ class AdminController extends Controller
     		'food_photo' => 'required|file|image|mimes:jpeg,png,gif,jpg,webp', //|max:2048',
     	]);
 
-    	$path = Storage::url($request->file('food_photo')->store('public'));
-    
+    	//$path = Storage::url($request->file('food_photo')->store('public'));
+        //$path = Storage::url($request->file('food_photo')->store('uploads'));
+        $path = Storage::disk('uploads')->put('/foods_photos', $request->file('food_photo'));
     	$store_food = Food::create([
     		'food_name' => $request->food_name,
     		'price' => $request->price,
@@ -58,7 +59,8 @@ class AdminController extends Controller
     	]);
 
 
-    	$new_photo = Storage::url($request->file('food_photo')->store('public'));
+    	//$new_photo = Storage::url($request->file('food_photo')->store('public'));
+        $new_photo = Storage::disk('uploads')->put('/foods_photos', $request->file('food_photo'));
 
     	$save_food_update = Food::find($id);
     	
@@ -79,7 +81,7 @@ class AdminController extends Controller
     	// $edit_food = Food::where('id','=',$id);
         $edit_food = Food::find($id);
         unlink(public_path($edit_food->food_photo));
-        //Storage::del($edit_food->food_photo);
+        //Storage::delete($edit_food->food_photo);
     	$edit_food->delete();
 
     	return redirect()->route('stored_food');

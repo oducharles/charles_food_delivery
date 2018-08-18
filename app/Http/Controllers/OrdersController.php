@@ -48,7 +48,7 @@ class OrdersController extends Controller
     {
         //if(User::is_manager()){
             $foods = DB::select('select * from foods');
-        
+        //dd($foods);
             return view('add_food', compact('foods'));
         //}
         
